@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "Im8Byl3xED6OYkY0PZFHafzR299gS0B+M7UDE0oQzEUn8E8bsHcNod8t9WWhKqZ8KijOo13cgZ9uCQlQKFf+ng==",
+  "success": false,
+  "projectFilePath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\EntityFramework\\EntityFramework.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Проект Hawkeye несовместим с net6.0 (.NETCoreApp,Version=v6.0). Проект Hawkeye поддерживает: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Hawkeye",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

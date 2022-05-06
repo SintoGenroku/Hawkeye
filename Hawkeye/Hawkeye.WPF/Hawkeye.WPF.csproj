@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Resuorces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hawkeye.Domain\Hawkeye.Domain.csproj" />
+    <ProjectReference Include="..\Hawkeye.EntityFramework\Hawkeye.EntityFramework.csproj" />
+    <ProjectReference Include="..\Hawkeye.OmdbAPI\Hawkeye.OmdbAPI.csproj" />
+  </ItemGroup>
+
+</Project>

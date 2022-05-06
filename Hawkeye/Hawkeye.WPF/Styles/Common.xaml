@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Color x:Key="NavbarBackground">#383838</Color>
+    <Color x:Key="HeaderBackground">#1f1f1f</Color>
+
+
+    <SolidColorBrush x:Key="BrushNavigation" Color="{StaticResource NavbarBackground}"/>
+    <SolidColorBrush x:Key="BrushHeader" Color="{StaticResource HeaderBackground}"/>
+
+
+    <Style TargetType="TextBlock">
+        <Setter Property="Foreground" Value="SeaGreen"/>
+    </Style>
+</ResourceDictionary>

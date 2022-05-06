@@ -1,0 +1,20 @@
+﻿Hawkeye.WPF
+
+
+winexe
+C#
+.cs
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.WPF\obj\Debug\net6.0-windows\
+Hawkeye.WPF
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.WPF\App.xaml
+10-266482089
+
+251857070736
+216-750775163
+Controls\HeaderBar.xaml;Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Styles\NavigationBar.xaml;Views\ActorsView.xaml;Views\FavoriteView.xaml;Views\FilmsView.xaml;Views\HomeView.xaml;Views\PlaylistsView.xaml;
+
+False
+

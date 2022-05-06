@@ -1,0 +1,17 @@
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\bin\Debug\net6.0\Hawkeye.EntityFramework.deps.json
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\bin\Debug\net6.0\Hawkeye.EntityFramework.runtimeconfig.json
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\bin\Debug\net6.0\Hawkeye.EntityFramework.dll
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\bin\Debug\net6.0\Hawkeye.EntityFramework.pdb
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\bin\Debug\net6.0\Hawkeye.Domain.dll
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\bin\Debug\net6.0\Hawkeye.Domain.pdb
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\obj\Debug\net6.0\Hawkeye.EntityFramework.csproj.AssemblyReference.cache
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\obj\Debug\net6.0\Hawkeye.EntityFramework.GeneratedMSBuildEditorConfig.editorconfig
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\obj\Debug\net6.0\Hawkeye.EntityFramework.AssemblyInfoInputs.cache
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\obj\Debug\net6.0\Hawkeye.EntityFramework.AssemblyInfo.cs
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\obj\Debug\net6.0\Hawkeye.EntityFramework.csproj.CoreCompileInputs.cache
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\obj\Debug\net6.0\Hawkeye.EntityFramework.csproj.CopyComplete
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\obj\Debug\net6.0\Hawkeye.EntityFramework.dll
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\obj\Debug\net6.0\refint\Hawkeye.EntityFramework.dll
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\obj\Debug\net6.0\Hawkeye.EntityFramework.pdb
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\obj\Debug\net6.0\Hawkeye.EntityFramework.genruntimeconfig.cache
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.EntityFramework\obj\Debug\net6.0\ref\Hawkeye.EntityFramework.dll

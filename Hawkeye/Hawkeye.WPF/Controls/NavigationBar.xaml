@@ -1,0 +1,60 @@
+﻿<UserControl
+            x:Class="Hawkeye.WPF.Controls.NavigationBar"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            xmlns:local="clr-namespace:Hawkeye.WPF.Controls"
+            xmlns:nav="clr-namespace:Hawkeye.WPF.State.Navigators"         
+            xmlns:cmd="clr-namespace:Hawkeye.WPF.Commands"           
+            
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" 
+             Background="{StaticResource BrushNavigation}">
+    <Grid MaxWidth="400">
+        <Grid.Resources>
+            <Style BasedOn="{StaticResource NavButton}" TargetType="RadioButton" />
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        
+        <RadioButton Grid.Row="0" 
+                     Content="Главная" 
+                     Padding="10" 
+                     Command="{Binding UpdateCurrentViewModelCommand}"
+                     CommandParameter="{x:Static nav:ViewType.Home}"
+        />
+        <RadioButton Grid.Row="1" 
+                     Content="Избранное" 
+                     Padding="10"
+                     Command="{Binding UpdateCurrentViewModelCommand}"
+                     CommandParameter="{x:Static nav:ViewType.Favorite}"
+        />
+        <RadioButton Grid.Row="2" 
+                     Content="Фильмы" 
+                     Padding="10"
+                     Command="{Binding UpdateCurrentViewModelCommand}"
+                     CommandParameter="{x:Static nav:ViewType.Films}"
+        />
+        <RadioButton Grid.Row="3"
+                     Content="Плейлисты" 
+                     Padding="10"
+                     Command="{Binding UpdateCurrentViewModelCommand}"
+                     CommandParameter="{x:Static nav:ViewType.Playlists}" 
+        />
+        <RadioButton Grid.Row="4" 
+                     Content="Актеры" 
+                     Padding="10"
+            Command="{Binding UpdateCurrentViewModelCommand}"
+            CommandParameter="{x:Static nav:ViewType.Actors}"
+        />
+        
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,15 @@
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\bin\Debug\net6.0\Hawkeye.OmdbAPI.deps.json
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\bin\Debug\net6.0\Hawkeye.OmdbAPI.dll
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\bin\Debug\net6.0\Hawkeye.OmdbAPI.pdb
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\bin\Debug\net6.0\Hawkeye.Domain.dll
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\bin\Debug\net6.0\Hawkeye.Domain.pdb
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\obj\Debug\net6.0\Hawkeye.OmdbAPI.csproj.AssemblyReference.cache
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\obj\Debug\net6.0\Hawkeye.OmdbAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\obj\Debug\net6.0\Hawkeye.OmdbAPI.AssemblyInfoInputs.cache
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\obj\Debug\net6.0\Hawkeye.OmdbAPI.AssemblyInfo.cs
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\obj\Debug\net6.0\Hawkeye.OmdbAPI.csproj.CoreCompileInputs.cache
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\obj\Debug\net6.0\Hawkeye.OmdbAPI.csproj.CopyComplete
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\obj\Debug\net6.0\Hawkeye.OmdbAPI.dll
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\obj\Debug\net6.0\refint\Hawkeye.OmdbAPI.dll
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\obj\Debug\net6.0\Hawkeye.OmdbAPI.pdb
+D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.OmdbAPI\obj\Debug\net6.0\ref\Hawkeye.OmdbAPI.dll
