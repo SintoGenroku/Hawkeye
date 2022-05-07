@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hawkeye.Domain.Services
 {
-    public interface IDataService<T>
+    /*public interface IDataService<T>
     {
         Task<IEnumerable<T>> GetAll();
 
@@ -18,5 +18,5 @@ namespace Hawkeye.Domain.Services
 
         Task<bool> Delete(Guid id);
 
-    }
+    }*/
 }

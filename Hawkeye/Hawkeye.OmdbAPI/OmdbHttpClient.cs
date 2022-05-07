@@ -1,39 +1,30 @@
-﻿using Hawkeye.OmdbAPI.Models;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 
 namespace Hawkeye.OmdbAPI
 {
     public class OmdbHttpClient : HttpClient
     {
+        private readonly HttpClient _httpClient;
+        private const string key = "6f51d678-ae9a-401e-9ed3-6746bda409e6";
         public OmdbHttpClient()
         {
             this.BaseAddress = new Uri("https://kinopoiskapiunofficial.tech/api");
-
+            _httpClient = new HttpClient();
+            _httpClient.DefaultRequestHeaders.Add("X-API-KEY", key);
         }
 
-        //will work after correct setup API host builder
-        /*
-                private readonly HttpClient _client;
-                private readonly string _apiKey;
+        public async Task<T> GetAsync<T>(string uri)
+        {
+/*            
+            var response = await _httpClient.GetAsync("https://kinopoiskapiunofficial.tech/api/v2.2/films/435"); //$"{BaseAddress}{uri}"
 
-                public OmdbHttpClient(HttpClient client, OmdbApiKey apiKey)
-                {
-                    _client = client;
-                    _apiKey = apiKey.Key;
-                }
-                public async Task<T> GetAsync<T>(string uri)
-                {
-                    HttpResponseMessage response = await _client.GetAsync($"{uri}?apikey={_apiKey}");
-                    string jsonResponse = await response.Content.ReadAsStringAsync();
-
-                    return JsonConvert.DeserializeObject<T>(jsonResponse);
-                }
-                */
-
+            response.EnsureSuccessStatusCode();*/
+            /*HttpResponseMessage response = new HttpResponseMessage();
+            response.TrailingHeaders.Add("X-API_KEY", "6f51d678-ae9a-401e-9ed3-6746bda409e6");*/
+            HttpResponseMessage response = await _httpClient.GetAsync($"{BaseAddress}{uri}?apikey={key}"); //{_apiKey}
+            string jsonResponse = await response.Content.ReadAsStringAsync();
+            
+            return JsonConvert.DeserializeObject<T>(jsonResponse);
+        }
     }
 }

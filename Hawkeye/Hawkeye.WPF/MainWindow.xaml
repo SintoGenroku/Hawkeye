@@ -10,7 +10,7 @@
         Title="Hawkeye"
         Height="450"  Width="700"
         MinHeight="350" MinWidth="450"
-        Icon="D:\2 course\2 sem\ООП\курсач\Hawkeye\Hawkeye.WPF\Resuorces\LightThemeLogo.png">
+        Icon="D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\Resuorces\DarkThemeLogo.png">
     <Window.DataContext>
         <vm:MainViewModel/>
     </Window.DataContext>
@@ -19,7 +19,7 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
-        <controls:HeaderBar Grid.Row="0"/>
+        <controls:HeaderBar Grid.Row="0" DataContext="{Binding Navigator}"/>
 
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.ColumnDefinitions>

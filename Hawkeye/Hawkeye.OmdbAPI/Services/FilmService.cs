@@ -7,21 +7,24 @@ namespace Hawkeye.OmdbAPI.Services
     {
         private readonly OmdbHttpClient _client;
 
-        public FilmService(OmdbHttpClient client)
+        public FilmService()
         {
-            _client = client;
+            _client = new OmdbHttpClient();
         }
         public async Task<FilmDataSource> GetFilmData(int id)
         {
-            using(OmdbHttpClient client = new OmdbHttpClient())
-            {
+            /*using(OmdbHttpClient client = new OmdbHttpClient())
+            {*/
                 string uri = $"/v2.2/films/{id}";
-                HttpResponseMessage response= await client.GetAsync(uri);
-                string JsonResponse = await response.Content.ReadAsStringAsync();
-                FilmDataSource filmDataSource = JsonConvert.DeserializeObject<FilmDataSource>(JsonResponse);
+                FilmDataSource filmDataSource= await _client.GetAsync<FilmDataSource>(uri);
+                if(filmDataSource == null)
+                {
+                    throw new Exception("Фильма такого няма");
+                }
+                //throw new Exception("!!!\n"+filmDataSource.Description);
                 return filmDataSource;
 
-            }
+            //}
         }
     }
 }

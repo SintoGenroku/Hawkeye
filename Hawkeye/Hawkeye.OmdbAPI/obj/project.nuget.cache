@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4N2Ng4FBrOFQ6uFzUaV2vutHysP2tLwjfNYIihbCzZjwGHzCLLnmNMLzNeCJT2p78z6DdOkabwaUNx5xCGrCfA==",
+  "dgSpecHash": "KL069FzAcr//u1Iry/YQnu5pQ5dKjmFINukJrlNNOPpHbZ62A3u5MMFO4BHXLIdmnnIJY1wbMxyUTZsHz+8Hzg==",
   "success": true,
-  "projectFilePath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.OmdbAPI\\Hawkeye.OmdbAPI.csproj",
+  "projectFilePath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.OmdbAPI\\Hawkeye.OmdbAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sinto\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

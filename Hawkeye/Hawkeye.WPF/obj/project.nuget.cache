@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QeeYsSJDLX7RtCN8pvAjVVlez7UMZ6NZrpcakSpxKPHY3f9XqpvzCWH+O6IDgFF6JF0aFVQZ+ch/sKZyq1O68A==",
+  "dgSpecHash": "pPzc9Ec/Hv32v7NFwgHTQznQwdkEBnGEqSYB1jRzL7aJaulvEmfmNs7cfyr9MDFkFepb6/xMWCiQjL0hoTIGZg==",
   "success": true,
-  "projectFilePath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.WPF\\Hawkeye.WPF.csproj",
+  "projectFilePath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.WPF\\Hawkeye.WPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sinto\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\sinto\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

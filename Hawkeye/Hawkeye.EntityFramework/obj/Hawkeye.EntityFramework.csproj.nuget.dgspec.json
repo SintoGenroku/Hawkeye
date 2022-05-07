@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj": {}
+    "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj": {}
   },
   "projects": {
-    "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj": {
+    "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj",
+        "projectUniqueName": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj",
         "projectName": "Hawkeye.Domain",
-        "projectPath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj",
+        "projectPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj",
         "packagesPath": "C:\\Users\\sinto\\.nuget\\packages\\",
-        "outputPath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.Domain\\obj\\",
+        "outputPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sinto\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj": {
+    "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj",
+        "projectUniqueName": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj",
         "projectName": "Hawkeye.EntityFramework",
-        "projectPath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj",
+        "projectPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj",
         "packagesPath": "C:\\Users\\sinto\\.nuget\\packages\\",
-        "outputPath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.EntityFramework\\obj\\",
+        "outputPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.EntityFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sinto\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj": {
-                "projectPath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj"
+              "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj": {
+                "projectPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj"
               }
             }
           }

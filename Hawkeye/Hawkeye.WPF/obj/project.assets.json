@@ -1937,11 +1937,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.WPF\\Hawkeye.WPF.csproj",
+      "projectUniqueName": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.WPF\\Hawkeye.WPF.csproj",
       "projectName": "Hawkeye.WPF",
-      "projectPath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.WPF\\Hawkeye.WPF.csproj",
+      "projectPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.WPF\\Hawkeye.WPF.csproj",
       "packagesPath": "C:\\Users\\sinto\\.nuget\\packages\\",
-      "outputPath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.WPF\\obj\\",
+      "outputPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.WPF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sinto\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1958,14 +1958,14 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj": {
-              "projectPath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj"
+            "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj": {
+              "projectPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.Domain\\Hawkeye.Domain.csproj"
             },
-            "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj": {
-              "projectPath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj"
+            "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj": {
+              "projectPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj"
             },
-            "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.OmdbAPI\\Hawkeye.OmdbAPI.csproj": {
-              "projectPath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.OmdbAPI\\Hawkeye.OmdbAPI.csproj"
+            "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.OmdbAPI\\Hawkeye.OmdbAPI.csproj": {
+              "projectPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.OmdbAPI\\Hawkeye.OmdbAPI.csproj"
             }
           }
         }

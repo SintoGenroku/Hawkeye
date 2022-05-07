@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+gq+axI7iblYRFKc5jqzoU86eG2ztfGgm+25BCEcRq7TOQ9EX/v7UBQzjQXqlJQ8+hCG8Xcizdg95tARFcR0ww==",
+  "dgSpecHash": "wwwfC6QWqyGDLxjXCSZuQ1dfOuyVMKQ0WvIYzxOttcMRtPjqrYDgDv0i0wUcxc/qMTvkzCqBzCYAdVGEaU2jWA==",
   "success": true,
-  "projectFilePath": "D:\\2 course\\2 sem\\ООП\\курсач\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj",
+  "projectFilePath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sinto\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\sinto\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
