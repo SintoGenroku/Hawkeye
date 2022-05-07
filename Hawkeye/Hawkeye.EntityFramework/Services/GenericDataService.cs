@@ -57,6 +57,7 @@ namespace Hawkeye.EntityFramework.Services
 
                 return createdResult.Entity;
             }
+      
         }
 
         public async Task<bool> Delete(Guid id)
