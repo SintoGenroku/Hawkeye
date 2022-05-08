@@ -5,9 +5,23 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Hawkeye.WPF.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800" Background="White">
     <Grid>
-        <TextBlock Text="Home"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.Background>
+                <ImageBrush Opacity="0.8" ImageSource="D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\Resuorces\HomeViewScreen.jpg"/>
+            </Grid.Background>
+            <StackPanel Orientation="Vertical" Style="{StaticResource HomePageTitle}">
+                <TextBlock Style="{StaticResource AppTitle}" Text="Hawkeye"/>
+                <TextBlock Style="{StaticResource AppSubTitle}" Text="Обитель кинематографа"/>
+            </StackPanel>
+        </Grid>
+        
+        
 
     </Grid>
 </UserControl>

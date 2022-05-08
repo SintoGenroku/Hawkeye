@@ -1,5 +1,4 @@
 ﻿using Hawkeye.Domain.Models;
-using Hawkeye.Domain.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
@@ -10,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Hawkeye.EntityFramework.Services
 {
-    public class GenericDataService<T> : IDataService<T> where T : DomainObject
+   /* public class GenericDataService<T> : IDataService<T> where T : DomainObject
     {
         private readonly HawkeyeDbContextFactory _contextFactory;
 
@@ -71,6 +70,6 @@ namespace Hawkeye.EntityFramework.Services
                 return true;
             }
         }
-    }
+    }*/
 
 }

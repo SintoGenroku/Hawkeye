@@ -1,0 +1,17 @@
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\bin\Debug\net6.0\Hawkeye.Foundation.deps.json
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\bin\Debug\net6.0\Hawkeye.Foundation.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\bin\Debug\net6.0\Hawkeye.Foundation.pdb
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\bin\Debug\net6.0\Hawkeye.Domain.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\bin\Debug\net6.0\Hawkeye.EntityFramework.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\bin\Debug\net6.0\Hawkeye.Domain.pdb
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\bin\Debug\net6.0\Hawkeye.EntityFramework.pdb
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\obj\Debug\net6.0\Hawkeye.Foundation.csproj.AssemblyReference.cache
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\obj\Debug\net6.0\Hawkeye.Foundation.GeneratedMSBuildEditorConfig.editorconfig
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\obj\Debug\net6.0\Hawkeye.Foundation.AssemblyInfoInputs.cache
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\obj\Debug\net6.0\Hawkeye.Foundation.AssemblyInfo.cs
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\obj\Debug\net6.0\Hawkeye.Foundation.csproj.CoreCompileInputs.cache
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\obj\Debug\net6.0\Hawkeye.Foundation.csproj.CopyComplete
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\obj\Debug\net6.0\Hawkeye.Foundation.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\obj\Debug\net6.0\refint\Hawkeye.Foundation.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\obj\Debug\net6.0\Hawkeye.Foundation.pdb
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Foundation\obj\Debug\net6.0\ref\Hawkeye.Foundation.dll

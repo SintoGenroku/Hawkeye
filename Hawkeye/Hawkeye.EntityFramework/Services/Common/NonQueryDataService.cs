@@ -1,5 +1,4 @@
 ﻿using Hawkeye.Domain.Models;
-using Hawkeye.Domain.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 

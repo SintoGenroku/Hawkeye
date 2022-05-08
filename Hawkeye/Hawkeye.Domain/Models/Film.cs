@@ -8,12 +8,12 @@ namespace Hawkeye.Domain.Models
 {
     public class Film : DomainObject
     {
-        public string Name { get; set; } //+
-        public string Genre { get; set; } //+
-        public DateTime Date { get; set; } //+
-        public double Rate { get; set; } //+
-        public string Country { get; set; } //+
-        public DateTime Duration { get; set; }//+
+        public string Name { get; set; } 
+        public string Genre { get; set; } 
+        public DateTime Date { get; set; } 
+        public double Rate { get; set; } 
+        public string Country { get; set; } 
+        public DateTime Duration { get; set; }
         public ICollection<Actor> Actors { get; set; }
         public string Description { get; set; }
         public string shortDescription { get; set; }

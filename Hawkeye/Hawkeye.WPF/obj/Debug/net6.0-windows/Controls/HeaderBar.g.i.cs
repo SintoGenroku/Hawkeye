@@ -54,7 +54,7 @@ namespace Hawkeye.WPF.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Hawkeye.WPF;V1.0.0.0;component/controls/headerbar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Hawkeye.WPF;component/controls/headerbar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Controls\HeaderBar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

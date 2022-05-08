@@ -1,0 +1,17 @@
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\bin\Debug\net6.0\Hawkeye.Data.Core.deps.json
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\bin\Debug\net6.0\Hawkeye.Data.Core.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\bin\Debug\net6.0\Hawkeye.Data.Core.pdb
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\bin\Debug\net6.0\Hawkeye.Domain.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\bin\Debug\net6.0\Hawkeye.EntityFramework.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\bin\Debug\net6.0\Hawkeye.EntityFramework.pdb
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\bin\Debug\net6.0\Hawkeye.Domain.pdb
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\obj\Debug\net6.0\Hawkeye.Data.Core.csproj.AssemblyReference.cache
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\obj\Debug\net6.0\Hawkeye.Data.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\obj\Debug\net6.0\Hawkeye.Data.Core.AssemblyInfoInputs.cache
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\obj\Debug\net6.0\Hawkeye.Data.Core.AssemblyInfo.cs
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\obj\Debug\net6.0\Hawkeye.Data.Core.csproj.CoreCompileInputs.cache
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\obj\Debug\net6.0\Hawkeye.Data.Core.csproj.CopyComplete
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\obj\Debug\net6.0\Hawkeye.Data.Core.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\obj\Debug\net6.0\refint\Hawkeye.Data.Core.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\obj\Debug\net6.0\Hawkeye.Data.Core.pdb
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.Data.Core\obj\Debug\net6.0\ref\Hawkeye.Data.Core.dll

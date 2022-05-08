@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hawkeye.EntityFramework", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hawkeye.WPF", "Hawkeye.WPF\Hawkeye.WPF.csproj", "{77B1FCC2-7357-4DF2-8B3F-2068469B0ED7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hawkeye.OmdbAPI", "Hawkeye.OmdbAPI\Hawkeye.OmdbAPI.csproj", "{C482B3D9-4CD3-482E-A530-7AA62A866925}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hawkeye.OmdbAPI", "Hawkeye.OmdbAPI\Hawkeye.OmdbAPI.csproj", "{C482B3D9-4CD3-482E-A530-7AA62A866925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hawkeye.Data.Core", "Hawkeye.Data.Core\Hawkeye.Data.Core.csproj", "{76A88A09-A8DD-4181-AB0B-FE38E85349FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hawkeye.Foundation", "Hawkeye.Foundation\Hawkeye.Foundation.csproj", "{3D15486B-283D-4812-BDCD-5E0AFB9DE372}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{C482B3D9-4CD3-482E-A530-7AA62A866925}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C482B3D9-4CD3-482E-A530-7AA62A866925}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C482B3D9-4CD3-482E-A530-7AA62A866925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A88A09-A8DD-4181-AB0B-FE38E85349FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A88A09-A8DD-4181-AB0B-FE38E85349FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A88A09-A8DD-4181-AB0B-FE38E85349FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A88A09-A8DD-4181-AB0B-FE38E85349FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D15486B-283D-4812-BDCD-5E0AFB9DE372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D15486B-283D-4812-BDCD-5E0AFB9DE372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D15486B-283D-4812-BDCD-5E0AFB9DE372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D15486B-283D-4812-BDCD-5E0AFB9DE372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
