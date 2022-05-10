@@ -151,3 +151,8 @@ D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\obj\Debug\net6.0
 D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\obj\Debug\net6.0-windows\ref\Hawkeye.WPF.dll
 D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\obj\Debug\net6.0-windows\Views\ProfileView.g.cs
 D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\obj\Debug\net6.0-windows\Views\ProfileView.baml
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\bin\Debug\net6.0-windows\Microsoft.AspNet.Identity.Core.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\bin\Debug\net6.0-windows\Hawkeye.Foundation.dll
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\bin\Debug\net6.0-windows\Hawkeye.Foundation.pdb
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\obj\Debug\net6.0-windows\Views\LoginView.g.cs
+D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\obj\Debug\net6.0-windows\Views\LoginView.baml

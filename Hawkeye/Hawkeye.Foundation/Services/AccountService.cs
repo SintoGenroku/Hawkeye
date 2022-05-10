@@ -2,6 +2,7 @@
 using Hawkeye.Domain.Models;
 using Hawkeye.EntityFramework;
 using Hawkeye.EntityFramework.Repositories;
+using Hawkeye.EntityFramework.Repositories.Abstracts;
 using Hawkeye.Foundation.Services.Abstracts;
 using Microsoft.AspNet.Identity;
 
@@ -10,10 +11,10 @@ namespace Hawkeye.Foundation.Services
 {
     public class AccountService : IAccountService
     {
-        private readonly UserRepository _UserRepository;
+        private readonly IUserRepository _UserRepository;
         private readonly IPasswordHasher _passwordHasher;
 
-        public AccountService(UserRepository userRepository, IPasswordHasher passwordHasher)
+        public AccountService(IUserRepository userRepository, IPasswordHasher passwordHasher)
         {
             _UserRepository = userRepository;
             _passwordHasher = passwordHasher;

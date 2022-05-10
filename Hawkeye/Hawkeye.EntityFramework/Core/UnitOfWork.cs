@@ -1,5 +1,10 @@
 ﻿using Hawkeye.EntityFramework.Contracts;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Hawkeye.EntityFramework.Core
 {
@@ -7,9 +12,9 @@ namespace Hawkeye.EntityFramework.Core
     {
         private readonly Dictionary<Type, object> _instances;
         private readonly Dictionary<Type, Type> _specificRepositories;
-        private readonly DbContext _dbContext;
+        private readonly HawkeyeDbContext _dbContext;
 
-        protected UnitOfWork(DbContext dbContext)
+        protected UnitOfWork(HawkeyeDbContext dbContext)
         {
             _dbContext = dbContext;
             _instances = new Dictionary<Type, object>();

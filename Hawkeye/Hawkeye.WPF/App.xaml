@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Hawkeye.WPF"
              xmlns:viewmodels="clr-namespace:Hawkeye.WPF.ViewModels"
-             xmlns:views="clr-namespace:Hawkeye.WPF.Views"
-    StartupUri="MainWindow.xaml">
+             xmlns:views="clr-namespace:Hawkeye.WPF.Views">
     <Application.Resources>
 
         <ResourceDictionary>
@@ -34,6 +33,10 @@
 
             <DataTemplate DataType="{x:Type viewmodels:ProfileViewModel}">
                 <views:ProfileView/>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewmodels:LoginViewModel}">
+                <views:LoginView/>
             </DataTemplate>
         </ResourceDictionary>
         

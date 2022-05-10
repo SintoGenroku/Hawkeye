@@ -1,5 +1,6 @@
 ﻿using Hawkeye.WPF.State.Navigators;
 using Hawkeye.WPF.ViewModels;
+using Hawkeye.WPF.ViewModels.Factories.Abstracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,11 +14,13 @@ namespace Hawkeye.WPF.Commands
     {
         public event EventHandler? CanExecuteChanged;
 
-        private INavigator _navigator;
+        private readonly INavigator _navigator;
+        private readonly IViewModelAbstractFactory _viewModelFactory;
 
-        public UpdateCurrentViewModelCommand(INavigator navigator)
+        public UpdateCurrentViewModelCommand(INavigator navigator, IViewModelAbstractFactory viewModelFactory)
         {
             _navigator = navigator;
+            _viewModelFactory = viewModelFactory;
         }
 
         public bool CanExecute(object? parameter)
@@ -30,33 +33,7 @@ namespace Hawkeye.WPF.Commands
             if(parameter is ViewType)
             {
                 ViewType viewType = (ViewType)parameter;
-                switch (viewType)
-                {
-                    case ViewType.Home:
-                        _navigator.CurrentViewModel = new HomeViewModel();
-                        break;
-                    case ViewType.Films:
-                        _navigator.CurrentViewModel = new FilmsViewModel(); 
-                        break;
-                    case ViewType.Playlists:
-                        _navigator.CurrentViewModel = new PlaylistsViewModel();
-                        break;
-                    case ViewType.Actors:
-                        _navigator.CurrentViewModel = new ActorsViewModel();
-                        break;
-                    case ViewType.Profile:
-                        _navigator.CurrentViewModel = new ProfileViewModel();
-                        break;
-                    case ViewType.Favorite:
-                        _navigator.CurrentViewModel = new FavoriteViewModel();
-                        break;
-                    case ViewType.Login:
-                        _navigator.CurrentViewModel = new LoginViewModel();
-                        break;
-                    case ViewType.Registration:
-                        _navigator.CurrentViewModel = new RegistrationViewModel();
-                        break;
-                }
+               _navigator.CurrentViewModel = _viewModelFactory.CreateViewModel(viewType);
             }
         }
     }

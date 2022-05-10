@@ -1,10 +1,5 @@
 ﻿using Hawkeye.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hawkeye.EntityFramework
 {
@@ -18,8 +13,16 @@ namespace Hawkeye.EntityFramework
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Actor> Actors { get; set; }
 
-        public HawkeyeDbContext(DbContextOptions options) : base(options) { }
+        public HawkeyeDbContext(DbContextOptions<HawkeyeDbContext> options) : base(options) { }
 
+/*        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            var options = new DbContextOptionsBuilder<HawkeyeDbContext>();
+            options.UseSqlServer(@"Server=.\SQLEXPRESS;Database=HawkeyeDB;Trusted_Connection=True;");
+        }
+
+*/
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()

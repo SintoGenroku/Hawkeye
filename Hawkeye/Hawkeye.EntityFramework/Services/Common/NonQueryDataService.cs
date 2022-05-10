@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace Hawkeye.EntityFramework.Services.Common
 {
-    public class NonQueryDataService<T> where T : DomainObject
+   /* public class NonQueryDataService<T> where T : DomainObject
     {
         private readonly HawkeyeDbContextFactory _dbContextFactory;
 
@@ -45,5 +45,5 @@ namespace Hawkeye.EntityFramework.Services.Common
                 return entity;
             }
         }
-    }
+    }*/
 }

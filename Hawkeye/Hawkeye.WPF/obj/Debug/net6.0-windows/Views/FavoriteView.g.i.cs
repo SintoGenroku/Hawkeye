@@ -53,7 +53,7 @@ namespace Hawkeye.WPF.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Hawkeye.WPF;component/views/favoriteview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Hawkeye.WPF;V1.0.0.0;component/views/favoriteview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\FavoriteView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

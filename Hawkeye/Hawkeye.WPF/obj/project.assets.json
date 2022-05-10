@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "Microsoft.AspNet.Identity.Core/2.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -658,6 +667,21 @@
           "bin/placeholder/Hawkeye.EntityFramework.dll": {}
         }
       },
+      "Hawkeye.Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Hawkeye.Domain": "1.0.0",
+          "Hawkeye.EntityFramework": "1.0.0",
+          "Microsoft.AspNet.Identity.Core": "2.2.3"
+        },
+        "compile": {
+          "bin/placeholder/Hawkeye.Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hawkeye.Foundation.dll": {}
+        }
+      },
       "Hawkeye.OmdbAPI/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -675,6 +699,19 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNet.Identity.Core/2.2.3": {
+      "sha512": "Mv5FpoaxspE8hlWLE4r1IdZtovg/OyFgVRhxQbx47J4sqdLImN1hnM1lnwCj+/wLmqtqFk/RYMoZ5GAcwm/00g==",
+      "type": "package",
+      "path": "microsoft.aspnet.identity.core/2.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.AspNet.Identity.Core.dll",
+        "lib/net45/Microsoft.AspNet.Identity.Core.xml",
+        "microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
+        "microsoft.aspnet.identity.core.nuspec"
+      ]
+    },
     "Microsoft.CSharp/4.5.0": {
       "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
@@ -1917,6 +1954,11 @@
       "path": "../Hawkeye.EntityFramework/Hawkeye.EntityFramework.csproj",
       "msbuildProject": "../Hawkeye.EntityFramework/Hawkeye.EntityFramework.csproj"
     },
+    "Hawkeye.Foundation/1.0.0": {
+      "type": "project",
+      "path": "../Hawkeye.Foundation/Hawkeye.Foundation.csproj",
+      "msbuildProject": "../Hawkeye.Foundation/Hawkeye.Foundation.csproj"
+    },
     "Hawkeye.OmdbAPI/1.0.0": {
       "type": "project",
       "path": "../Hawkeye.OmdbAPI/Hawkeye.OmdbAPI.csproj",
@@ -1927,6 +1969,7 @@
     "net6.0-windows7.0": [
       "Hawkeye.Domain >= 1.0.0",
       "Hawkeye.EntityFramework >= 1.0.0",
+      "Hawkeye.Foundation >= 1.0.0",
       "Hawkeye.OmdbAPI >= 1.0.0",
       "Microsoft.Extensions.Hosting.Abstractions >= 6.0.0"
     ]
@@ -1963,6 +2006,9 @@
             },
             "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj": {
               "projectPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.EntityFramework\\Hawkeye.EntityFramework.csproj"
+            },
+            "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.Foundation\\Hawkeye.Foundation.csproj": {
+              "projectPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.Foundation\\Hawkeye.Foundation.csproj"
             },
             "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.OmdbAPI\\Hawkeye.OmdbAPI.csproj": {
               "projectPath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.OmdbAPI\\Hawkeye.OmdbAPI.csproj"
@@ -2006,5 +2052,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Microsoft.AspNet.Identity.Core 2.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Microsoft.AspNet.Identity.Core",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

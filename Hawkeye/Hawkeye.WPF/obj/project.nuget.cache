@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pPzc9Ec/Hv32v7NFwgHTQznQwdkEBnGEqSYB1jRzL7aJaulvEmfmNs7cfyr9MDFkFepb6/xMWCiQjL0hoTIGZg==",
+  "dgSpecHash": "Cxz5EF2b3UikoB5xaUNS1uaEPy7fzhQ/jnEZzQGJevI3/es7TYeHtU+GPDLOGeCGFNndwM5EXEHn3xUZL8cE/w==",
   "success": true,
   "projectFilePath": "D:\\2 course\\2 sem\\ООП\\Course project WPF\\Hawkeye\\Hawkeye.WPF\\Hawkeye.WPF.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sinto\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
     "C:\\Users\\sinto\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\sinto\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\sinto\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
@@ -48,5 +49,16 @@
     "C:\\Users\\sinto\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\sinto\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Microsoft.AspNet.Identity.Core 2.2.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Microsoft.AspNet.Identity.Core",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

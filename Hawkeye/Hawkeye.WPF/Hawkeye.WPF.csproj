@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Hawkeye.Domain\Hawkeye.Domain.csproj" />
     <ProjectReference Include="..\Hawkeye.EntityFramework\Hawkeye.EntityFramework.csproj" />
+    <ProjectReference Include="..\Hawkeye.Foundation\Hawkeye.Foundation.csproj" />
     <ProjectReference Include="..\Hawkeye.OmdbAPI\Hawkeye.OmdbAPI.csproj" />
   </ItemGroup>
 

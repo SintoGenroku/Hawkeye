@@ -7,7 +7,7 @@ namespace Hawkeye.EntityFramework.Repositories
 {
     public sealed class PlaylistRepository : Repository<Playlist>, IPlaylistRepository
     {
-        public PlaylistRepository(DbContext context) : base(context)
+        public PlaylistRepository(HawkeyeDbContext context) : base(context)
         {
         }
 

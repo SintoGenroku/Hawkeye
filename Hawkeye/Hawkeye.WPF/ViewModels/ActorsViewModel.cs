@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hawkeye.WPF.ViewModels
 {
-    internal class ActorsViewModel : ViewModelBase
+    public class ActorsViewModel : ViewModelBase
     {
     }
 }

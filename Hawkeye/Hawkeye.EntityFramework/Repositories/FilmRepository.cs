@@ -7,7 +7,7 @@ namespace Hawkeye.EntityFramework.Repositories
 {
     public sealed class FilmRepository : Repository<Film>, IFilmRepository
     {
-        public FilmRepository(DbContext context) : base(context)
+        public FilmRepository(HawkeyeDbContext context) : base(context)
         {
         }
 

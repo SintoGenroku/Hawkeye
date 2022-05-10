@@ -7,7 +7,7 @@ namespace Hawkeye.EntityFramework.Repositories
 {
     public sealed class UserRepository : Repository<User>, IUserRepository
     {
-        public UserRepository(DbContext context) : base(context)
+        public UserRepository(HawkeyeDbContext context) : base(context)
         {
         }
 

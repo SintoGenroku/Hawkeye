@@ -1,17 +1,22 @@
 ﻿using Hawkeye.EntityFramework.Contracts;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Hawkeye.EntityFramework.Core
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly DbContext _db;
+        private readonly HawkeyeDbContext _db;
 
         protected readonly DbSet<T> Data;
-        public Repository(DbContext context)
+        public Repository(HawkeyeDbContext context)
         {
             _db = context;
-            Data =  context.Set<T>();
+            Data = context.Set<T>();
         }
 
         public async Task CreateAsync(T item)
@@ -35,7 +40,7 @@ namespace Hawkeye.EntityFramework.Core
         public async Task<IReadOnlyCollection<T>> GetAllAsync()
         {
             var result = await Data.ToListAsync();
-            return result;    
+            return result;
         }
 
         public async Task UpdateAsync(T item)

@@ -10,11 +10,20 @@
         "dependencies": {
           "Hawkeye.Domain": "1.0.0",
           "Hawkeye.EntityFramework": "1.0.0",
+          "Hawkeye.Foundation": "1.0.0",
           "Hawkeye.OmdbAPI": "1.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "6.0.0"
         },
         "runtime": {
           "Hawkeye.WPF.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.3": {
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.2.3.11125"
+          }
         }
       },
       "Microsoft.CSharp/4.5.0": {},
@@ -431,6 +440,16 @@
           "Hawkeye.EntityFramework.dll": {}
         }
       },
+      "Hawkeye.Foundation/1.0.0": {
+        "dependencies": {
+          "Hawkeye.Domain": "1.0.0",
+          "Hawkeye.EntityFramework": "1.0.0",
+          "Microsoft.AspNet.Identity.Core": "2.2.3"
+        },
+        "runtime": {
+          "Hawkeye.Foundation.dll": {}
+        }
+      },
       "Hawkeye.OmdbAPI/1.0.0": {
         "dependencies": {
           "Hawkeye.Domain": "1.0.0",
@@ -447,6 +466,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNet.Identity.Core/2.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Mv5FpoaxspE8hlWLE4r1IdZtovg/OyFgVRhxQbx47J4sqdLImN1hnM1lnwCj+/wLmqtqFk/RYMoZ5GAcwm/00g==",
+      "path": "microsoft.aspnet.identity.core/2.2.3",
+      "hashPath": "microsoft.aspnet.identity.core.2.2.3.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
@@ -755,6 +781,11 @@
       "sha512": ""
     },
     "Hawkeye.EntityFramework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Hawkeye.Foundation/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

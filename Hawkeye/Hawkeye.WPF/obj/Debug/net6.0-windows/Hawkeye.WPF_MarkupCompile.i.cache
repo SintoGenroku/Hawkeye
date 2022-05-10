@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\App.xaml
-111961553347
+12-2012516658
 
-29-653544021
-220-2141813928
-Controls\HeaderBar.xaml;Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Styles\NavigationBar.xaml;Views\ActorsView.xaml;Views\FavoriteView.xaml;Views\FilmsView.xaml;Views\HomeView.xaml;Views\PlaylistsView.xaml;Views\ProfileView.xaml;
+391443367853
+222-1092055766
+Controls\HeaderBar.xaml;Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Styles\NavigationBar.xaml;Views\ActorsView.xaml;Views\FavoriteView.xaml;Views\FilmsView.xaml;Views\HomeView.xaml;Views\LoginView.xaml;Views\PlaylistsView.xaml;Views\ProfileView.xaml;
 
-True
+False
 

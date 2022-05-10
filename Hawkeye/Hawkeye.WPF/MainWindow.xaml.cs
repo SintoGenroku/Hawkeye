@@ -1,5 +1,4 @@
-﻿using Hawkeye.WPF.ViewModels;
-using System.Windows;
+﻿using System.Windows;
 
 namespace Hawkeye.WPF
 {
@@ -11,7 +10,6 @@ namespace Hawkeye.WPF
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
         }
     }
 }

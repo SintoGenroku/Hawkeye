@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Hawkeye.WPF.ViewModels
 {
-    internal class LoginViewModel : ViewModelBase
+    public class LoginViewModel : ViewModelBase
     {
+
     }
 }
