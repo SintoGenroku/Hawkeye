@@ -3,13 +3,14 @@ using Newtonsoft.Json;
 
 namespace Hawkeye.OmdbAPI.Services
 {
-    public class FilmService : IFilmDataSourceService
+    public class FilmService : IFilmService
     {
         private readonly OmdbHttpClient _client;
 
-        public FilmService()
+
+        public FilmService(OmdbHttpClient client)
         {
-            _client = new OmdbHttpClient();
+            _client = client;
         }
         public async Task<FilmDataSource> GetFilmData(int id)
         {

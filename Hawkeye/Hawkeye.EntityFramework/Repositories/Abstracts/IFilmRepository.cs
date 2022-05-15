@@ -6,5 +6,7 @@ namespace Hawkeye.EntityFramework.Repositories.Abstracts
     public interface IFilmRepository : IRepository<Film>
     {
         Task<Film> GetByNameAsync(string name);
+        IQueryable<Film> GetByIdWithCommentsAsync();
+
     }
 }

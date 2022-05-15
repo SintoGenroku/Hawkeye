@@ -8,29 +8,27 @@ using System.Threading.Tasks;
 
 namespace Hawkeye.WPF.ViewModels
 {
+    public delegate TViewModel CreateViewModel<TViewModel>() where TViewModel : ViewModelBase;
+
     public abstract class ViewModelBase : INotifyPropertyChanged, IDisposable
     {
-        public virtual string DisplayName { get; set; }
-        public event PropertyChangedEventHandler? PropertyChanged;
+        public virtual void Dispose() { }
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = "")
+        public event PropertyChangedEventHandler PropertyChanged;
+
+
+        protected void OnPropertyChanged([CallerMemberName] string prop = "")
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
         }
 
-        protected virtual bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = "")
+        protected bool Set<T>(ref T field, T value, [CallerMemberName] string propertyName = null)
         {
-            if (EqualityComparer<T>.Default.Equals(value, storage))
+            if (EqualityComparer<T>.Default.Equals(field, value))
                 return false;
-            storage = value;
-            this.OnPropertyChanged(propertyName);
+            field = value;
+            OnPropertyChanged();
             return true;
         }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-
     }
 }

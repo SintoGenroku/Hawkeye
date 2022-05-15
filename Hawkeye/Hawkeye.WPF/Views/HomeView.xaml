@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid.Background>
-                <ImageBrush Opacity="0.8" ImageSource="D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\Resuorces\HomeViewScreen.jpg"/>
+                <ImageBrush Opacity="0.8" ImageSource="\Resuorces\HomeViewScreen.jpg" Stretch="UniformToFill"/>
             </Grid.Background>
             <StackPanel Orientation="Vertical" Style="{StaticResource HomePageTitle}">
                 <TextBlock Style="{StaticResource AppTitle}" Text="Hawkeye"/>

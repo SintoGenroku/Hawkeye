@@ -22,21 +22,6 @@ namespace Hawkeye.EntityFramework.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ActorFilm", b =>
-                {
-                    b.Property<Guid>("ActorsId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("FilmsId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("ActorsId", "FilmsId");
-
-                    b.HasIndex("FilmsId");
-
-                    b.ToTable("ActorFilm");
-                });
-
             modelBuilder.Entity("FilmPlaylist", b =>
                 {
                     b.Property<Guid>("FilmsId")
@@ -52,26 +37,19 @@ namespace Hawkeye.EntityFramework.Migrations
                     b.ToTable("FilmPlaylist");
                 });
 
-            modelBuilder.Entity("Hawkeye.Domain.Models.Actor", b =>
+            modelBuilder.Entity("FilmUser", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<Guid>("FavoriteFilmsId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Age")
-                        .HasColumnType("int");
+                    b.Property<Guid>("LikedUsersId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.HasKey("FavoriteFilmsId", "LikedUsersId");
 
-                    b.Property<string>("Nation")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.HasIndex("LikedUsersId");
 
-                    b.HasKey("Id");
-
-                    b.ToTable("Actors");
+                    b.ToTable("FilmUser");
                 });
 
             modelBuilder.Entity("Hawkeye.Domain.Models.Comment", b =>
@@ -87,12 +65,14 @@ namespace Hawkeye.EntityFramework.Migrations
                     b.Property<Guid>("FilmID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("UserID")
+                    b.Property<Guid>("UserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
                     b.HasIndex("FilmID");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Comments");
                 });
@@ -107,15 +87,12 @@ namespace Hawkeye.EntityFramework.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("Duration")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("Duration")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Genre")
                         .IsRequired()
@@ -126,22 +103,21 @@ namespace Hawkeye.EntityFramework.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PosterURI")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Rate")
                         .HasColumnType("float");
 
                     b.Property<string>("Slogan")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Trailer")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Year")
+                        .HasColumnType("int");
+
                     b.Property<string>("shortDescription")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -207,21 +183,6 @@ namespace Hawkeye.EntityFramework.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("ActorFilm", b =>
-                {
-                    b.HasOne("Hawkeye.Domain.Models.Actor", null)
-                        .WithMany()
-                        .HasForeignKey("ActorsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Hawkeye.Domain.Models.Film", null)
-                        .WithMany()
-                        .HasForeignKey("FilmsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("FilmPlaylist", b =>
                 {
                     b.HasOne("Hawkeye.Domain.Models.Film", null)
@@ -237,6 +198,21 @@ namespace Hawkeye.EntityFramework.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("FilmUser", b =>
+                {
+                    b.HasOne("Hawkeye.Domain.Models.Film", null)
+                        .WithMany()
+                        .HasForeignKey("FavoriteFilmsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Hawkeye.Domain.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("LikedUsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Hawkeye.Domain.Models.Comment", b =>
                 {
                     b.HasOne("Hawkeye.Domain.Models.Film", "Film")
@@ -245,7 +221,15 @@ namespace Hawkeye.EntityFramework.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Hawkeye.Domain.Models.User", "User")
+                        .WithMany("Comments")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Film");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Hawkeye.Domain.Models.Playlist", b =>
@@ -282,6 +266,8 @@ namespace Hawkeye.EntityFramework.Migrations
 
             modelBuilder.Entity("Hawkeye.Domain.Models.User", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("Playlists");
                 });
 #pragma warning restore 612, 618

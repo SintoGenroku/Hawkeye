@@ -8,11 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Resuorces\" />
+    <None Remove="appsettings.json" />
+    <None Remove="Resuorces\DarkThemeLogo.png" />
+    <None Remove="Resuorces\HomeViewScreen.jpg" />
+    <None Remove="Resuorces\LightThemeLogo.png" />
+    <None Remove="Resuorces\playlist-image.jpg" />
+    <None Remove="Resuorces\star-icon.png" />
+    <None Remove="Resuorces\UserIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+    <PackageReference Include="PasswordBoxMVVM" Version="1.0.5" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +29,16 @@
     <ProjectReference Include="..\Hawkeye.EntityFramework\Hawkeye.EntityFramework.csproj" />
     <ProjectReference Include="..\Hawkeye.Foundation\Hawkeye.Foundation.csproj" />
     <ProjectReference Include="..\Hawkeye.OmdbAPI\Hawkeye.OmdbAPI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="appsettings.json" />
+    <Resource Include="Resuorces\DarkThemeLogo.png" />
+    <Resource Include="Resuorces\HomeViewScreen.jpg" />
+    <Resource Include="Resuorces\LightThemeLogo.png" />
+    <Resource Include="Resuorces\playlist-image.jpg" />
+    <Resource Include="Resuorces\star-icon.png" />
+    <Resource Include="Resuorces\UserIcon.png" />
   </ItemGroup>
 
 </Project>

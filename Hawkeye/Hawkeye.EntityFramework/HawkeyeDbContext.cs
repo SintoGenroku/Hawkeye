@@ -11,17 +11,16 @@ namespace Hawkeye.EntityFramework
         public DbSet<Playlist> Playlists { get; set; }
         public DbSet<Film> Films { get; set; }
         public DbSet<Comment> Comments { get; set; }
-        public DbSet<Actor> Actors { get; set; }
 
-        public HawkeyeDbContext(DbContextOptions<HawkeyeDbContext> options) : base(options) { }
 
-/*        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //public HawkeyeDbContext(DbContextOptions<HawkeyeDbContext> options) : base(options) { }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var options = new DbContextOptionsBuilder<HawkeyeDbContext>();
-            options.UseSqlServer(@"Server=.\SQLEXPRESS;Database=HawkeyeDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=HawkeyeDB;Trusted_Connection=True;");
+            base.OnConfiguring(optionsBuilder);
         }
-
-*/
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -38,13 +37,17 @@ namespace Hawkeye.EntityFramework
                 .WithMany(f => f.Playlists);
 
             modelBuilder.Entity<Film>()
-                .HasMany(f => f.Actors)
-                .WithMany(a => a.Films);
-
-            modelBuilder.Entity<Film>()
                 .HasMany(f => f.Comments)
                 .WithOne(c => c.Film);
 
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.FavoriteFilms)
+                .WithMany(f => f.LikedUsers);
+            modelBuilder.Entity<Comment>()
+                .HasOne(c => c.User)
+                .WithMany(u => u.Comments);
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

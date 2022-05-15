@@ -1,7 +1,10 @@
-﻿namespace Hawkeye.WPF.ViewModels.Factories.Abstracts
+﻿using Hawkeye.Domain.Models;
+using Hawkeye.WPF.State.Navigators;
+
+namespace Hawkeye.WPF.ViewModels.Factories.Abstracts
 {
-    public interface IViewModelFactory<T> where T : ViewModelBase
+    public interface IViewModelFactory
     {
-        T CreateViewModel();
+        ViewModelBase CreateViewModel(ViewType viewType);
     }
 }

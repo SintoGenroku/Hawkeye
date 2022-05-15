@@ -13,7 +13,7 @@
     <Compile Update="Controls\NavigationBar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\ActorsView.xaml.cs">
+    <Compile Update="Views\CurrentFilmView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\FavoriteView.xaml.cs">
@@ -34,6 +34,9 @@
     <Compile Update="Views\ProfileView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\RegistrationView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Controls\HeaderBar.xaml">
@@ -51,7 +54,7 @@
     <Page Update="Styles\NavigationBar.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\ActorsView.xaml">
+    <Page Update="Views\CurrentFilmView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\FavoriteView.xaml">
@@ -70,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ProfileView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\RegistrationView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -48,13 +48,7 @@
                      Command="{Binding UpdateCurrentViewModelCommand}"
                      CommandParameter="{x:Static nav:ViewType.Playlists}" 
         />
-        <RadioButton Grid.Row="4" 
-                     Content="Актеры" 
-                     Padding="10"
-            Command="{Binding UpdateCurrentViewModelCommand}"
-            CommandParameter="{x:Static nav:ViewType.Actors}"
-        />
-        
+
 
     </Grid>
 </UserControl>

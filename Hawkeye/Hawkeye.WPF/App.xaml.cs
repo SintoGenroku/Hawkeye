@@ -1,16 +1,10 @@
-﻿using Hawkeye.Domain.Models;
-using Hawkeye.EntityFramework;
-using Hawkeye.EntityFramework.Repositories;
-using Hawkeye.EntityFramework.Repositories.Abstracts;
-using Hawkeye.Foundation.Services;
-using Hawkeye.Foundation.Services.Abstracts;
-using Hawkeye.WPF.State.Navigators;
-using Hawkeye.WPF.ViewModels;
-using Hawkeye.WPF.ViewModels.Factories;
-using Hawkeye.WPF.ViewModels.Factories.Abstracts;
-using Microsoft.AspNet.Identity;
+﻿using Hawkeye.EntityFramework;
+using Hawkeye.OmdbAPI;
+using Hawkeye.OmdbAPI.Services;
+using Hawkeye.WPF.HostBuilders;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System;
 using System.Windows;
 
@@ -21,58 +15,61 @@ namespace Hawkeye.WPF
     /// </summary>
     public partial class App : Application
     {
-        protected override void OnStartup(StartupEventArgs e)
+        private readonly IHost _host;
+
+        public App()
         {
-            
-            /*var q = new FilmService().GetFilmData(435).Result;
-            MessageBox.Show($"{q.NameRu}");*/
-
-            IServiceProvider serviceProvider = CreateServiceProvider();
-            IAccountService accountService = serviceProvider.GetService<IAccountService>();
-            //HawkeyeDbContextFactory dbContextFactory = serviceProvider.GetService<HawkeyeDbContextFactory>();
-            IUserRepository userRepository = serviceProvider.GetService<IUserRepository>();
-            IRoleRepository roleRepository = serviceProvider.GetService<IRoleRepository>();
-
-/*            userRepository.CreateAsync(new User()
-            {
-                Name = "sinto",
-                PasswordHash = "qwerty123",
-                Role = roleRepository.GetByNameAsync("USER").Result
-            });*/
-            accountService.RegisterAsync("unek", "qwerty", "qwerty");
-
-            Window window = new MainWindow();
-            window.DataContext = serviceProvider.GetRequiredService<MainViewModel>();
-            window.Show();
-            base.OnStartup(e);
+            _host = CreateHostBuilder().Build();
         }
 
-        private IServiceProvider CreateServiceProvider()
+        public static IHostBuilder CreateHostBuilder(string[] args = null)
         {
-            IServiceCollection services = new ServiceCollection();
 
-            //services.AddSingleton<HawkeyeDbContextFactory>();
-            services.AddSingleton<IAccountService, AccountService>();
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IPlaylistRepository, PlaylistRepository>();
-            services.AddScoped<IFilmRepository, FilmRepository>();
-            services.AddScoped<IRoleRepository, RoleRepository>();
+            return Host.CreateDefaultBuilder(args)
+                        .AddConfig()
+                        .AddDbContext()
+                        .AddServices()
+                        //.AddMovieAPI()
+                        .AddViewModels()
+                        .AddWindow();
+        }
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            _host.Start();
+            HawkeyeDbContextFactory contextFactory = _host.Services.GetRequiredService<HawkeyeDbContextFactory>();
+            using (HawkeyeDbContext context = contextFactory.CreateDbContext())
+            {
+                context.Database.Migrate();
+            }
+            #region MyRegion
+            /*var q = new FilmService().GetFilmData(435).Result;
+    MessageBox.Show($"{q.NameRu}");*/
 
-            services.AddSingleton<IViewModelAbstractFactory, ViewModelAbstractFactory>();
-            services.AddSingleton<IViewModelFactory<HomeViewModel>, HomeViewModelFactory>();
-            services.AddSingleton<IViewModelFactory<FilmsViewModel>, FilmsViewModelFactory>();
-            services.AddSingleton<IViewModelFactory<FavoriteViewModel>, FavoriteViewModelFactory>();
-            services.AddSingleton<IViewModelFactory<PlaylistsViewModel>, PlaylistsViewModelFactory>();
+            /*            userRepository.CreateAsync(new User()
+                        {
+                            Name = "sinto",
+                            PasswordHash = "qwerty123",
+                            Role = roleRepository.GetByNameAsync("USER").Result
+                        });*/
+            //accountService.RegisterAsync("unek", "qwerty", "qwerty");
 
-            services.AddScoped<IPasswordHasher, PasswordHasher>();
+            #endregion
+            Window window = _host.Services.GetRequiredService<MainWindow>();
+            window.Show();
+            base.OnStartup(e);
+            /*  var omdb = _host.Services.GetRequiredService<IFilmService>();
+              var film = omdb.GetFilmData(435).Result;
+              MessageBox.Show($"{film}");*/
 
-            services.AddDbContext<HawkeyeDbContext>(options => options.UseSqlServer(@"Server=.\SQLEXPRESS;Database=HawkeyeDB;Trusted_Connection=True;"));
+        }
 
-            services.AddScoped<INavigator, Navigator>();
+        protected override async void OnExit(ExitEventArgs e)
+        {
+            await _host.StopAsync();
+            _host.Dispose();
+            base.OnExit(e);
 
-            services.AddScoped<MainViewModel>();
 
-            return services.BuildServiceProvider();
         }
     }
 }

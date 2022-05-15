@@ -11,12 +11,14 @@ namespace Hawkeye.Foundation.Services
 {
     public class AccountService : IAccountService
     {
-        private readonly IUserRepository _UserRepository;
+        private readonly IUserRepository _userRepository;
+        private readonly IRoleRepository _roleRepository;
         private readonly IPasswordHasher _passwordHasher;
 
-        public AccountService(IUserRepository userRepository, IPasswordHasher passwordHasher)
+        public AccountService(IUserRepository userRepository, IRoleRepository roleRepository, IPasswordHasher passwordHasher)
         {
-            _UserRepository = userRepository;
+            _userRepository = userRepository;
+            _roleRepository = roleRepository;
             _passwordHasher = passwordHasher;
         }
 
@@ -24,7 +26,7 @@ namespace Hawkeye.Foundation.Services
 
         public async Task<User> Login(string username, string password)
         {
-            User storedUser = await _UserRepository.GetByNameAsync(username);
+            User storedUser = await _userRepository.GetByNameAsync(username);
             
             if (storedUser == null)
             {
@@ -49,7 +51,7 @@ namespace Hawkeye.Foundation.Services
                 result = RegistrationResult.PasswordDoNotMatch;
             }
 
-            User accountUsername = await _UserRepository.GetByNameAsync(username);
+            User accountUsername = await _userRepository.GetByNameAsync(username);
 
             if(accountUsername != null)
             {
@@ -64,9 +66,9 @@ namespace Hawkeye.Foundation.Services
                 {
                     Name = username,
                     PasswordHash = hashedPassword,
-                    Role = new RoleRepository(new HawkeyeDbContextFactory().CreateDbContext()).GetByNameAsync("USER").Result
+                    Role = _roleRepository.GetByNameAsync("USER").Result
                 };
-                await _UserRepository.CreateAsync(user);
+                await _userRepository.CreateAsync(user);
             }
             return result;
         }

@@ -8,27 +8,54 @@
         xmlns:vm="clr-namespace:Hawkeye.WPF.ViewModels"
         mc:Ignorable="d" 
         Title="Hawkeye"
-        Height="450"  Width="700"
-        MinHeight="350" MinWidth="450"
+        Height="720"  Width="1280"
+        MinHeight="680" MinWidth="1000"
         Icon="D:\2 course\2 sem\ООП\Course project WPF\Hawkeye\Hawkeye.WPF\Resuorces\DarkThemeLogo.png">
-    <Window.DataContext>
-        <vm:MainViewModel/>
-    </Window.DataContext>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
-        <controls:HeaderBar Grid.Row="0" DataContext="{Binding Navigator}"/>
+        <Grid Grid.Row="0">
+            <Grid.Style>
+                <Style TargetType="Grid">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsLoggedIn}" Value="False">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Grid.Style>
+
+            <controls:HeaderBar/>
+        </Grid>
 
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" MinWidth="100" MaxWidth="200"/>
+                <ColumnDefinition Width="Auto"  MaxWidth="200"/>
                 <ColumnDefinition Width="4*"/>
             </Grid.ColumnDefinitions>
-            <controls:NavigationBar Grid.Column="0" DataContext="{Binding Navigator}"/>
-            <ContentControl Grid.Column="1" Content="{Binding Navigator.CurrentViewModel}" />
             
+            <Grid Grid.Column="0">
+                <Grid.Style>
+                    <Style TargetType="Grid">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsLoggedIn}" Value="False">
+                                <Setter Property="Visibility" Value="Collapsed"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Grid.Style>
+                <controls:NavigationBar />
+            </Grid>
+            
+
+           
+            <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <ContentControl Content="{Binding CurrentViewModel}"/>
+            </ScrollViewer>
+
         </Grid>
 
     </Grid>

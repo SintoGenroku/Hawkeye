@@ -8,6 +8,11 @@
 
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
                 <ResourceDictionary Source="/Styles/Common.xaml"/>
                 <ResourceDictionary Source="/Styles/NavigationBar.xaml" />
             </ResourceDictionary.MergedDictionaries>
@@ -27,10 +32,6 @@
                 <views:FavoriteView/>
             </DataTemplate>
 
-            <DataTemplate DataType="{x:Type viewmodels:ActorsViewModel}">
-                <views:ActorsView/>
-            </DataTemplate>
-
             <DataTemplate DataType="{x:Type viewmodels:ProfileViewModel}">
                 <views:ProfileView/>
             </DataTemplate>
@@ -38,6 +39,15 @@
             <DataTemplate DataType="{x:Type viewmodels:LoginViewModel}">
                 <views:LoginView/>
             </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:RegistrationViewModel}">
+                <views:RegistrationView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:CurrentFilmViewModel}">
+                <views:CurrentFilmView/>
+            </DataTemplate>
+
         </ResourceDictionary>
         
     </Application.Resources>

@@ -11,6 +11,12 @@ namespace Hawkeye.EntityFramework.Repositories
         {
         }
 
+        public IQueryable<Film> GetByIdWithCommentsAsync()
+        {
+            return  Data.Include(film => film.Comments);
+
+        }
+
         public async Task<Film> GetByNameAsync(string name)
         {
             var result = await Data.FirstOrDefaultAsync(f => f.Name == name); 

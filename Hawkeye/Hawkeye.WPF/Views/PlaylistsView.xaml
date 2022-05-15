@@ -7,6 +7,31 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock Text="Playlists"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"  
+                BorderBrush="{StaticResource BrushNavigation}"
+                BorderThickness="0, 0, 0,3">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Gray" />
+            </Border.Effect>
+            <TextBlock Text="Плейлисты" FontSize="30" HorizontalAlignment="Center"/>
+        </Border>
+
+        <ListBox Grid.Row="1"
+                 BorderThickness="0"
+                 ItemsSource="{Binding Playlists}"
+                 SelectedItem="{Binding SelectedPlaylist}"
+                 ItemTemplate="{StaticResource ResourceKey=PlaylistsListTemplate}"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel HorizontalAlignment="Left"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
     </Grid>
 </UserControl>

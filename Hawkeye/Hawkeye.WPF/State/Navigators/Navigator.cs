@@ -2,6 +2,7 @@
 using Hawkeye.WPF.Models;
 using Hawkeye.WPF.ViewModels;
 using Hawkeye.WPF.ViewModels.Factories.Abstracts;
+using System;
 using System.Windows.Input;
 
 namespace Hawkeye.WPF.State.Navigators
@@ -17,16 +18,15 @@ namespace Hawkeye.WPF.State.Navigators
             }
             set
             {
+                _currentViewModel?.Dispose();
+
                 _currentViewModel = value;
-                OnPropertyChanged(nameof(CurrentViewModel));
+                StateChanged?.Invoke();
             }
         }
 
-        public ICommand UpdateCurrentViewModelCommand { get; set; }
 
-        public Navigator(IViewModelAbstractFactory viewModelFactory)
-        {
-            UpdateCurrentViewModelCommand = new UpdateCurrentViewModelCommand(this, viewModelFactory);
-        }
+        public event Action StateChanged;
+
     }
 }

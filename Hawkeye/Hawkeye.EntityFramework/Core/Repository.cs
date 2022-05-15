@@ -1,10 +1,5 @@
 ﻿using Hawkeye.EntityFramework.Contracts;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hawkeye.EntityFramework.Core
 {
@@ -39,7 +34,7 @@ namespace Hawkeye.EntityFramework.Core
 
         public async Task<IReadOnlyCollection<T>> GetAllAsync()
         {
-            var result = await Data.ToListAsync();
+            var result =  Data.ToList();
             return result;
         }
 

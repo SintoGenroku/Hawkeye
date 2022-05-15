@@ -1,0 +1,349 @@
+﻿++Решение "Hawkeye" ‎(проекты: 5 из 5)
+i:{00000000-0000-0000-0000-000000000000}:Hawkeye.sln
+++Hawkeye.Domain
+i:{00000000-0000-0000-0000-000000000000}:Hawkeye.Domain
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\bin\debug\net6.0\hawkeye.domain.dll
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\bin\debug\net6.0\hawkeye.domain.dll
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\bin\debug\net6.0\hawkeye.domain.dll
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\bin\debug\net6.0\hawkeye.domain.dll
+++Зависимости
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:>3139
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:>3141
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:>3140
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:>3138
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:>3142
+++Exceptions
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\exceptions\
+++InvalidPasswordException.cs
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\exceptions\invalidpasswordexception.cs
+++UserNotFoundException.cs
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\exceptions\usernotfoundexception.cs
+++Models
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\models\
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\models\
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.omdbapi\models\
+++Actor.cs
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\models\actor.cs
+++Comment.cs
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\models\comment.cs
+++DomainObject.cs
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\models\domainobject.cs
+++Film.cs
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\models\film.cs
+++FilmInfo.cs
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\models\filminfo.cs
+++Playlist.cs
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\models\playlist.cs
+++Role.cs
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\models\role.cs
+++User.cs
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\models\user.cs
+++Анализаторы
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:анализаторы
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:анализаторы
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:анализаторы
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:анализаторы
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:анализаторы
+++Платформы
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:платформы
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:платформы
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:платформы
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:платформы
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:платформы
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++System.Text.Json.SourceGeneration
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{e27845d6-cd3e-4f41-a97f-1f8d0cd9e5f3}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.domain\microsoft.netcore.app
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\microsoft.netcore.app
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\microsoft.netcore.app
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.omdbapi\microsoft.netcore.app
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.foundation\microsoft.netcore.app
+++Hawkeye.EntityFramework
+i:{00000000-0000-0000-0000-000000000000}:Hawkeye.EntityFramework
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\bin\debug\net6.0\hawkeye.entityframework.dll
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\bin\debug\net6.0\hawkeye.entityframework.dll
+++Contracts
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\contracts\
+++IRepository.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\contracts\irepository.cs
+++IUnitOfWork.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\contracts\iunitofwork.cs
+++Core
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\core\
+++Repository.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\core\repository.cs
+++UnitOfWork.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\core\unitofwork.cs
+++Migrations
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\migrations\
+++20220507211558_initial.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\migrations\20220507211558_initial.cs
+++HawkeyeDbContextModelSnapshot.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\migrations\hawkeyedbcontextmodelsnapshot.cs
+++Repositories
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\repositories\
+++Abstracts
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\repositories\abstracts\
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\authenticators\abstracts\
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\navigators\abstracts\
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\factories\abstracts\
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.foundation\services\abstracts\
+++FilmRepository.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\repositories\filmrepository.cs
+++PlaylistRepository.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\repositories\playlistrepository.cs
+++RoleRepository.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\repositories\rolerepository.cs
+++UserRepository.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\repositories\userrepository.cs
+++Services
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\services\
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.omdbapi\services\
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.foundation\services\
+++Common
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\services\common\
+++NonQueryDataService.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\services\common\nonquerydataservice.cs
+++GenericDataService.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\services\genericdataservice.cs
+++HawkeyeDbContext.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\hawkeyedbcontext.cs
+++HawkeyeDbContextFactory.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\hawkeyedbcontextfactory.cs
+++Пакеты
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:пакеты
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:пакеты
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:пакеты
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:пакеты
+++Проекты
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:проекты
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:проекты
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:проекты
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:проекты
+++20220507211558_initial.Designer.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\migrations\20220507211558_initial.designer.cs
+++IFilmRepository.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\repositories\abstracts\ifilmrepository.cs
+++IPlaylistRepository.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\repositories\abstracts\iplaylistrepository.cs
+++IRoleRepository.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\repositories\abstracts\irolerepository.cs
+++IUserRepository.cs
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.entityframework\repositories\abstracts\iuserrepository.cs
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:c:\users\sinto\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:c:\users\sinto\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:c:\users\sinto\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:c:\users\sinto\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:c:\users\sinto\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:c:\users\sinto\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.EntityFrameworkCore (6.0.4)
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:>3197
+++Microsoft.EntityFrameworkCore.Design (6.0.4)
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:>3201
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:>3199
+++Microsoft.EntityFrameworkCore.Tools (6.0.4)
+i:{9486e9ec-b798-45ae-b8f5-ad97b94c3201}:>3203
+++Hawkeye.WPF
+i:{00000000-0000-0000-0000-000000000000}:Hawkeye.WPF
+++Commands
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\commands\
+++AsyncCommandBase.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\commands\asynccommandbase.cs
+++LoginCommand.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\commands\logincommand.cs
+++RegistrationCommand.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\commands\registrationcommand.cs
+++RenavigateCommand.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\commands\renavigatecommand.cs
+++UpdateCurrentViewModelCommand .cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\commands\updatecurrentviewmodelcommand .cs
+++Controls
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\controls\
+++HeaderBar.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\controls\headerbar.xaml
+++NavigationBar.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\controls\navigationbar.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\styles\navigationbar.xaml
+++HostBuilders
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\hostbuilders\
+++ConfigurationHostBuilderExtensions.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\hostbuilders\configurationhostbuilderextensions.cs
+++DbContextHostBuilderExtensions.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\hostbuilders\dbcontexthostbuilderextensions.cs
+++OmdbAPIHostBuilderExtensions.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\hostbuilders\omdbapihostbuilderextensions.cs
+++ServicesHostBuilderExtensions.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\hostbuilders\serviceshostbuilderextensions.cs
+++ViewModelsHostBuilderExtensions.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\hostbuilders\viewmodelshostbuilderextensions.cs
+++WindowHostBuilderExtensions.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\hostbuilders\windowhostbuilderextensions.cs
+++ObservableObject.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\models\observableobject.cs
+++Resuorces
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\resuorces\
+++DarkThemeLogo.png
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\resuorces\darkthemelogo.png
+++HomeViewScreen.jpg
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\resuorces\homeviewscreen.jpg
+++LightThemeLogo.png
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\resuorces\lightthemelogo.png
+++UserIcon.png
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\resuorces\usericon.png
+++State
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\
+++Authenticators
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\authenticators\
+++IAuthenticator.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\authenticators\abstracts\iauthenticator.cs
+++Authenticator.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\authenticators\authenticator.cs
+++Navigators
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\navigators\
+++INavigator.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\navigators\abstracts\inavigator.cs
+++IRenavigator.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\navigators\abstracts\irenavigator.cs
+++Navigator.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\navigators\navigator.cs
+++ViewModelDelegateRenavigator.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\navigators\viewmodeldelegaterenavigator.cs
+++ViewType.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\state\navigators\viewtype.cs
+++Styles
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\styles\
+++Common.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\styles\common.xaml
+++ViewModels
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\
+++Factories
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\factories\
+++ViewModelFactory.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\factories\viewmodelfactory.cs
+++ActorsViewModel.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\actorsviewmodel.cs
+++FavoriteViewModel.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\favoriteviewmodel.cs
+++FilmsViewModel.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\filmsviewmodel.cs
+++HomeViewModel.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\homeviewmodel.cs
+++LoginViewModel.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\loginviewmodel.cs
+++MainViewModel.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\mainviewmodel.cs
+++MessageViewModel.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\messageviewmodel.cs
+++PlaylistsViewModel.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\playlistsviewmodel.cs
+++ProfileViewModel.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\profileviewmodel.cs
+++RegistrationViewModel.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\registrationviewmodel.cs
+++ViewModelBase.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\viewmodelbase.cs
+++Views
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\
+++ActorsView.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\actorsview.xaml
+++FavoriteView.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\favoriteview.xaml
+++FilmsView.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\filmsview.xaml
+++HomeView.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\homeview.xaml
+++LoginView.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\loginview.xaml
+++PlaylistsView.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\playlistsview.xaml
+++ProfileView.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\profileview.xaml
+++RegistrationView.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\registrationview.xaml
+++RegistrationView.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\registrationview.xaml.cs
+++App.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\app.xaml
+++App.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\app.xaml.cs
+++appsettings.json
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\appsettings.json
+++AssemblyInfo.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\assemblyinfo.cs
+++MainWindow.xaml
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\mainwindow.xaml
+++MainWindow.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\mainwindow.xaml.cs
+++HeaderBar.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\controls\headerbar.xaml.cs
+++NavigationBar.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\controls\navigationbar.xaml.cs
+++IViewModelFactory.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\viewmodels\factories\abstracts\iviewmodelfactory.cs
+++ActorsView.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\actorsview.xaml.cs
+++FavoriteView.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\favoriteview.xaml.cs
+++FilmsView.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\filmsview.xaml.cs
+++HomeView.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\homeview.xaml.cs
+++LoginView.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\loginview.xaml.cs
+++PlaylistsView.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\playlistsview.xaml.cs
+++ProfileView.xaml.cs
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\views\profileview.xaml.cs
+++Microsoft.Extensions.Hosting (6.0.1)
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:>3168
+++Microsoft.Extensions.Http (6.0.0)
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:>3170
+++PasswordBoxMVVM (1.0.5)
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:>3171
+++Microsoft.WindowsDesktop.App.WPF
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.wpf\microsoft.windowsdesktop.app.wpf
+++Hawkeye.Foundation
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.foundation\bin\debug\net6.0\hawkeye.foundation.dll
+i:{00000000-0000-0000-0000-000000000000}:Hawkeye.Foundation
+++Hawkeye.OmdbAPI
+i:{77b1fcc2-7357-4df2-8b3f-2068469b0ed7}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.omdbapi\bin\debug\net6.0\hawkeye.omdbapi.dll
+i:{00000000-0000-0000-0000-000000000000}:Hawkeye.OmdbAPI
+++FilmDataSource.cs
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.omdbapi\models\filmdatasource.cs
+++OmdbApiKey.cs
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.omdbapi\models\omdbapikey.cs
+++FilmService.cs
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.omdbapi\services\filmservice.cs
+++IFilmDataSourceService.cs
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.omdbapi\services\ifilmdatasourceservice.cs
+++OmdbHttpClient.cs
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.omdbapi\omdbhttpclient.cs
+++Newtonsoft.Json (13.0.1)
+i:{c482b3d9-4cd3-482e-a530-7aa62a866925}:>3169
+++IAccountService.cs
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.foundation\services\abstracts\iaccountservice.cs
+++AccountService.cs
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.foundation\services\accountservice.cs
+++RegistrationResult.cs
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:d:\2 course\2 sem\ооп\course project wpf\hawkeye\hawkeye.foundation\services\registrationresult.cs
+++Microsoft.AspNet.Identity.Core (2.2.3)
+i:{3d15486b-283d-4812-bdcd-5e0afb9de372}:>3198

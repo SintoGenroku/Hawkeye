@@ -16,5 +16,11 @@ namespace Hawkeye.EntityFramework.Repositories
             var result = await Data.FirstOrDefaultAsync(p => p.Name == name & p.User.Id == userId);
             return result;
         }
+
+        public IQueryable<Playlist> GetByIdWithOwnerAsync(Guid id)
+        {
+            return Data.Where(playlist => playlist.User.Id == id);
+
+        }
     }
 }

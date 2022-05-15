@@ -10,8 +10,8 @@ namespace Hawkeye.WPF.State.Navigators
     {
         Home,
         Films,
+        CurrentFilm,
         Playlists,
-        Actors,
         Profile,
         Favorite,
         Login,
