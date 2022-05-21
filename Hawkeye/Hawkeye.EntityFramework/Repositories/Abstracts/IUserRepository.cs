@@ -7,5 +7,6 @@ namespace Hawkeye.EntityFramework.Repositories.Abstracts
     {
 
         Task<User> GetByNameAsync(string name);
+        IQueryable<User> GetByNameWithFaforiteAsync();
     }
 }

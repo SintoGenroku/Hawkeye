@@ -24,5 +24,6 @@ namespace Hawkeye.WPF.Views
         {
             InitializeComponent();
         }
+
     }
 }

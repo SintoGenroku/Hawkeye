@@ -6,7 +6,41 @@
              xmlns:local="clr-namespace:Hawkeye.WPF.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </UserControl.Resources>
     <Grid>
-        <TextBlock Text="Favorite"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"  
+                BorderBrush="{StaticResource BrushNavigation}"
+                BorderThickness="0, 0, 0,3">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Color="Gray" />
+            </Border.Effect>
+            <TextBlock FontSize="30" HorizontalAlignment="Center">
+                <Run Text="Твои избранные фильмы"/>
+            </TextBlock>
+        </Border>
+
+        <ListBox Grid.Row="1"
+                 BorderThickness="0"
+                 ItemsSource="{Binding Favorite}"
+                 SelectedItem="{Binding SelectedFilm}"
+                 ItemTemplate="{StaticResource ResourceKey=FavoriteTemplate}"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 ScrollViewer.CanContentScroll="True">
+
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+
+
     </Grid>
 </UserControl>

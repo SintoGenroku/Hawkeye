@@ -13,7 +13,13 @@
     <Compile Update="Controls\NavigationBar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\AdminPanelView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\CurrentFilmView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CurrentPlaylistView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\FavoriteView.xaml.cs">
@@ -54,7 +60,13 @@
     <Page Update="Styles\NavigationBar.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\AdminPanelView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\CurrentFilmView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CurrentPlaylistView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\FavoriteView.xaml">

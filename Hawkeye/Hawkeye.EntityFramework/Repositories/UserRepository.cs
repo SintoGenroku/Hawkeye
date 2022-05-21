@@ -11,9 +11,14 @@ namespace Hawkeye.EntityFramework.Repositories
         {
         }
 
-        public async Task<User> GetByNameAsync(string name)
+        public Task<User> GetByNameAsync(string name)
         {
-            var result = await Data.FirstOrDefaultAsync(u => u.Name == name);
+            var result = Data.FirstOrDefaultAsync(x => x.Name == name);
+            return result;
+        }
+        public IQueryable<User> GetByNameWithFaforiteAsync()
+        {
+            var result = Data.Include(user => user.FavoriteFilms);
             return result;
         }
     }

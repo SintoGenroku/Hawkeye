@@ -1,7 +1,5 @@
 ﻿using Hawkeye.Domain.Exceptions;
 using Hawkeye.Domain.Models;
-using Hawkeye.EntityFramework;
-using Hawkeye.EntityFramework.Repositories;
 using Hawkeye.EntityFramework.Repositories.Abstracts;
 using Hawkeye.Foundation.Services.Abstracts;
 using Microsoft.AspNet.Identity;
@@ -26,7 +24,7 @@ namespace Hawkeye.Foundation.Services
 
         public async Task<User> Login(string username, string password)
         {
-            User storedUser = await _userRepository.GetByNameAsync(username);
+            User storedUser =  _userRepository.GetByNameWithFaforiteAsync().FirstOrDefault(user => user.Name == username);
             
             if (storedUser == null)
             {

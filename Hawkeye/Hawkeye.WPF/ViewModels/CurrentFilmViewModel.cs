@@ -16,6 +16,7 @@ namespace Hawkeye.WPF.ViewModels
         private string _commentText;
         private ObservableCollection<Comment> _filmComments;
         public ICommand AddCommentCommand {get;}
+        public ICommand AddFilmToFavoriteCommand { get;}
         
         public string CommentText 
         {
@@ -43,9 +44,13 @@ namespace Hawkeye.WPF.ViewModels
             set => ErrorMessageViewModel.Message = value;
         }
 
-        public CurrentFilmViewModel(IFilmRepository filmRepository, IAuthenticator authenticator, IRepository<Comment> commentRepository)
+        public CurrentFilmViewModel(IFilmRepository filmRepository, 
+                                    IAuthenticator authenticator, 
+                                    IRepository<Comment> commentRepository, 
+                                    IUserRepository userRepository)
         {
             AddCommentCommand = new AddCommentCommand(this, authenticator, commentRepository);
+            AddFilmToFavoriteCommand = new AddFilmToFavoriteCommand(authenticator, filmRepository, userRepository);
             ErrorMessageViewModel = new MessageViewModel();
             _filmRepository = filmRepository;
             FilmComments = new ObservableCollection<Comment>();
@@ -62,6 +67,7 @@ namespace Hawkeye.WPF.ViewModels
                 FilmComments.Add(comment);
             }
         }
+
 
         public override void Dispose()
         {

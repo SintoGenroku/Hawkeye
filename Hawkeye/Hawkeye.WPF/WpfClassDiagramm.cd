@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Hawkeye.WPF.Commands.AddCommentCommand" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAACACQAAGAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\AddCommentCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.AddFilmToFavoriteCommand" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAACAAQAAGAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Commands\AddFilmToFavoriteCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.AddFilmToPlaylistCommand" BaseTypeListCollapsed="true">
+    <Position X="4" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAADAAQAAEAAAAAIAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Commands\AddFilmToPlaylistCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.AsyncCommandBase">
+    <Position X="18.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAADgAQAAEQAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Commands\AsyncCommandBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.CreatePlaylistCommand" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAADAAQAAEAAAAgAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\CreatePlaylistCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.DeleteCommentCommand" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAACAAQAAkAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\DeleteCommentCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.LoginCommand">
+    <Position X="18.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAIAAAAAAAAAAEAAAAgAAAAEAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Commands\LoginCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.LogoutCommand">
+    <Position X="20.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAIAAAAEAAAAgAAAAAAAAAAAAAAAAAAkA=</HashCode>
+      <FileName>Commands\LogoutCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.RegistrationCommand">
+    <Position X="16.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAEAAgAAACAAAAAAAAAAABAAEA=</HashCode>
+      <FileName>Commands\RegistrationCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.RemoveFilmFromPlaylistCommand" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAADAAQAAEAAAAgIAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Commands\RemoveFilmFromPlaylistCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.RemoveFromFavoriteCommand" BaseTypeListCollapsed="true">
+    <Position X="4" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAGAAQAAGAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Commands\RemoveFromFavoriteCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.RemovePlaylistCommand" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAADAgQAAEAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\RemovePlaylistCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.RenavigateCommand" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\RenavigateCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Commands.UpdateCurrentViewModelCommand" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAACIAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\UpdateCurrentViewModelCommand .cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Controls.HeaderBar" BaseTypeListCollapsed="true">
+    <Position X="4" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\HeaderBar.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Controls.NavigationBar" BaseTypeListCollapsed="true">
+    <Position X="4" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\NavigationBar.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.HostBuilders.ConfigurationHostBuilderExtensions">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HostBuilders\ConfigurationHostBuilderExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.HostBuilders.DbContextHostBuilderExtensions">
+    <Position X="2" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HostBuilders\DbContextHostBuilderExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.HostBuilders.ServicesHostBuilderExtensions">
+    <Position X="2" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HostBuilders\ServicesHostBuilderExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.HostBuilders.ViewModelsHostBuilderExtensions">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIEBAAAAAAAAAAAAAAAAAgABAIAAAAAAAMAAAAAACA=</HashCode>
+      <FileName>HostBuilders\ViewModelsHostBuilderExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.HostBuilders.WindowHostBuilderExtensions">
+    <Position X="2" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>HostBuilders\WindowHostBuilderExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.Foundation.Services.FilmStorage">
+    <Position X="6.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\FilmStorage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.Models.ObservableObject">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ObservableObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Models.PlaylistStorage">
+    <Position X="6.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PlaylistStorage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.Models.UserComment">
+    <Position X="8" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAQAAAAgAAAAABAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Models\UserComment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.State.Authenticators.Authenticator" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAIAAAAAAAEAAAAIAAAABAAAAAAAQAAAAAiA=</HashCode>
+      <FileName>State\Authenticators\Authenticator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.State.Navigators.Navigator">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>State\Navigators\Navigator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hawkeye.WPF.State.Navigators.ViewModelDelegateRenavigator&lt;TViewModel&gt;" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>State\Navigators\ViewModelDelegateRenavigator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.Factories.ViewModelFactory" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABIkIIAQAAAAAAAAAAAEIAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ViewModels\Factories\ViewModelFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.AdminPanelViewModel">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAgABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AdminPanelViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.CurrentFilmViewModel">
+    <Position X="13.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAAAQABCAAAAEAAAAAAAACAAAgBADAAAAAAAAAAAE=</HashCode>
+      <FileName>ViewModels\CurrentFilmViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.CurrentPlaylistViewModel">
+    <Position X="16.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQASAAQAAAABIAACAEAAAAAEAAIAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\CurrentPlaylistViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.FavoriteViewModel">
+    <Position X="20.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAgACAAIEACAEAAAAgEAAAAAAACEACAAACAAAA=</HashCode>
+      <FileName>ViewModels\FavoriteViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.FilmsViewModel">
+    <Position X="23.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAgAAAAIEACAAAAAAAGAAAAAAAAEAAAAACAgAA=</HashCode>
+      <FileName>ViewModels\FilmsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.HomeViewModel">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAAAAAAAAAAIGACAAAAAAgEAAAAAAgAEAAAAAAAAAE=</HashCode>
+      <FileName>ViewModels\HomeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.LoginViewModel">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAQAACAAAAAAAQAAAAAAgBAAAAACAAIAAACAAAA=</HashCode>
+      <FileName>ViewModels\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.MainViewModel">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACIAIEACAAAAAAgAAAAAACgAAAACAAAAAAA=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.MessageViewModel">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAIAAAAAA=</HashCode>
+      <FileName>ViewModels\MessageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.PlaylistsViewModel">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAQAAQACgABIAACAAACAAgAAAAEAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>ViewModels\PlaylistsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.ProfileViewModel">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAECACAAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>ViewModels\ProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.RegistrationViewModel">
+    <Position X="22" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAQAACAAEAAAAQCAAAAAAAAAAACCAAIAAQAAIAA=</HashCode>
+      <FileName>ViewModels\RegistrationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.ViewModels.ViewModelBase" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Views.AdminPanelView" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AdminPanelView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Views.CurrentFilmView" BaseTypeListCollapsed="true">
+    <Position X="22" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\CurrentFilmView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Views.CurrentPlaylistView" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\CurrentPlaylistView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Views.FavoriteView" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\FavoriteView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Views.FilmsView" BaseTypeListCollapsed="true">
+    <Position X="22" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\FilmsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Views.HomeView" BaseTypeListCollapsed="true">
+    <Position X="25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\HomeView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Views.LoginView" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\LoginView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Views.PlaylistsView" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\PlaylistsView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Views.ProfileView" BaseTypeListCollapsed="true">
+    <Position X="25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ProfileView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.Views.RegistrationView" BaseTypeListCollapsed="true">
+    <Position X="25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\RegistrationView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hawkeye.WPF.App">
+    <Position X="8.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAIAAAAAAAAAAAAAAAAAAAAAQAAAAAAAABAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hawkeye.WPF.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Hawkeye.WPF.State.Authenticators.Abstracts.IAuthenticator">
+    <Position X="17.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAIAAAABAAAAAAAQAAAAAiA=</HashCode>
+      <FileName>State\Authenticators\Abstracts\IAuthenticator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hawkeye.WPF.State.Navigators.INavigator">
+    <Position X="19.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>State\Navigators\Abstracts\INavigator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hawkeye.WPF.State.Navigators.Abstracts.IRenavigator">
+    <Position X="21" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>State\Navigators\Abstracts\IRenavigator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Hawkeye.WPF.ViewModels.Factories.Abstracts.IViewModelFactory">
+    <Position X="22.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\Factories\Abstracts\IViewModelFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Hawkeye.WPF.State.Navigators.ViewType">
+    <Position X="15.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAQAAAAAAAAAAAAAACAACAQAAAAAABCQAAAEgAA=</HashCode>
+      <FileName>State\Navigators\ViewType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Hawkeye.WPF.ViewModels.CreateViewModel&lt;TViewModel&gt;">
+    <Position X="15.75" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

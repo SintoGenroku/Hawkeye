@@ -45,21 +45,21 @@ namespace Hawkeye.WPF.Commands
                         _registerRenavigator.Renavigate();
                         break;
                     case RegistrationResult.PasswordDoNotMatch:
-                        _registerViewModel.ErrorMessage = "Password does not match confirm password.";
+                        _registerViewModel.ErrorMessage = "Пароли не совпадают.";
                         break;
 
                         break;
                     case RegistrationResult.UsernameAlreadyExists:
-                        _registerViewModel.ErrorMessage = "An account for this username already exists.";
+                        _registerViewModel.ErrorMessage = "Аккаунт с таким именем уже существует.";
                         break;
                     default:
-                        _registerViewModel.ErrorMessage = "Registration failed.";
+                        _registerViewModel.ErrorMessage = "Ошибка регистрации.";
                         break;
                 }
             }
             catch (Exception)
             {
-                _registerViewModel.ErrorMessage = "Registration failed.";
+                _registerViewModel.ErrorMessage = "Ошибка регистрации.";
             }
         }
 

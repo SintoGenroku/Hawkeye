@@ -1,11 +1,6 @@
-﻿using Hawkeye.Domain.Models;
-using Hawkeye.WPF.State.Navigators;
+﻿using Hawkeye.WPF.State.Navigators;
 using Hawkeye.WPF.ViewModels.Factories.Abstracts;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hawkeye.WPF.ViewModels.Factories
 {
@@ -17,14 +12,20 @@ namespace Hawkeye.WPF.ViewModels.Factories
         private readonly CreateViewModel<FavoriteViewModel> _createFavoriteViewModel;
         private readonly CreateViewModel<LoginViewModel> _createLoginViewModel;
         private readonly CreateViewModel<CurrentFilmViewModel> _createCurrentFilmViewModel;
+        private readonly CreateViewModel<CurrentPlaylistViewModel> _createCurrentPlaylistViewModel;
+        private readonly CreateViewModel<ProfileViewModel> _createProfileViewModel;
+        private readonly CreateViewModel<AdminPanelViewModel> _createAdminPanelViewModel;
 
 
-        public ViewModelFactory(CreateViewModel<HomeViewModel> createHomeViewModel, 
-                                CreateViewModel<FilmsViewModel> createFilmsViewModel, 
-                                CreateViewModel<PlaylistsViewModel> createPlaylistsViewModel, 
+        public ViewModelFactory(CreateViewModel<HomeViewModel> createHomeViewModel,
+                                CreateViewModel<FilmsViewModel> createFilmsViewModel,
+                                CreateViewModel<PlaylistsViewModel> createPlaylistsViewModel,
                                 CreateViewModel<FavoriteViewModel> createFavoriteViewModel,
                                 CreateViewModel<LoginViewModel> createLoginViewModel,
-                                CreateViewModel<CurrentFilmViewModel> createCurrentFilmViewModel)
+                                CreateViewModel<CurrentFilmViewModel> createCurrentFilmViewModel,
+                                CreateViewModel<CurrentPlaylistViewModel> createCurrentPlaylistViewModel,
+                                CreateViewModel<ProfileViewModel> createProfileViewModel, 
+                                CreateViewModel<AdminPanelViewModel> createAdminPanelViewModel)
         {
             _createHomeViewModel = createHomeViewModel;
             _createFilmsViewModel = createFilmsViewModel;
@@ -32,6 +33,9 @@ namespace Hawkeye.WPF.ViewModels.Factories
             _createFavoriteViewModel = createFavoriteViewModel;
             _createLoginViewModel = createLoginViewModel;
             _createCurrentFilmViewModel = createCurrentFilmViewModel;
+            _createCurrentPlaylistViewModel = createCurrentPlaylistViewModel;
+            _createProfileViewModel = createProfileViewModel;
+            _createAdminPanelViewModel = createAdminPanelViewModel;
         }
 
         public ViewModelBase CreateViewModel(ViewType viewType)
@@ -45,13 +49,17 @@ namespace Hawkeye.WPF.ViewModels.Factories
                 case ViewType.Playlists:
                     return _createPlaylistsViewModel();
                 case ViewType.Profile:
-                    return new ProfileViewModel();
+                    return _createProfileViewModel();
                 case ViewType.Favorite:
                     return _createFavoriteViewModel();
                 case ViewType.Login:
                     return _createLoginViewModel();
                 case ViewType.CurrentFilm:
-                        return _createCurrentFilmViewModel();
+                    return _createCurrentFilmViewModel();
+                case ViewType.CurrentPlaylist:
+                    return _createCurrentPlaylistViewModel();
+                case ViewType.AdminPanel:
+                    return _createAdminPanelViewModel();
                 default:
                     throw new ArgumentException("The ViewType doesn't have a ViewModel", "viewType");
             }

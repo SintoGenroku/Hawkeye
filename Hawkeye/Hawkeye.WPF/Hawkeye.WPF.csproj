@@ -9,12 +9,17 @@
 
   <ItemGroup>
     <None Remove="appsettings.json" />
-    <None Remove="Resuorces\DarkThemeLogo.png" />
-    <None Remove="Resuorces\HomeViewScreen.jpg" />
-    <None Remove="Resuorces\LightThemeLogo.png" />
-    <None Remove="Resuorces\playlist-image.jpg" />
-    <None Remove="Resuorces\star-icon.png" />
-    <None Remove="Resuorces\UserIcon.png" />
+    <None Remove="Resources\clapperboard-icon.png" />
+    <None Remove="Resources\cross-icon.jpg" />
+    <None Remove="Resources\cult-cinema.jpeg" />
+    <None Remove="Resources\DarkThemeLogo.png" />
+    <None Remove="Resources\heart-icon.png" />
+    <None Remove="Resources\HomeViewScreen.jpg" />
+    <None Remove="Resources\LightThemeLogo.png" />
+    <None Remove="Resources\playlist-image.jpg" />
+    <None Remove="Resources\plus-icon.jpg" />
+    <None Remove="Resources\star-icon.png" />
+    <None Remove="Resources\UserIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,12 +38,17 @@
 
   <ItemGroup>
     <Resource Include="appsettings.json" />
-    <Resource Include="Resuorces\DarkThemeLogo.png" />
-    <Resource Include="Resuorces\HomeViewScreen.jpg" />
-    <Resource Include="Resuorces\LightThemeLogo.png" />
-    <Resource Include="Resuorces\playlist-image.jpg" />
-    <Resource Include="Resuorces\star-icon.png" />
-    <Resource Include="Resuorces\UserIcon.png" />
+    <Resource Include="Resources\clapperboard-icon.png" />
+    <Resource Include="Resources\cross-icon.jpg" />
+    <Resource Include="Resources\cult-cinema.jpeg" />
+    <Resource Include="Resources\DarkThemeLogo.png" />
+    <Resource Include="Resources\heart-icon.png" />
+    <Resource Include="Resources\HomeViewScreen.jpg" />
+    <Resource Include="Resources\LightThemeLogo.png" />
+    <Resource Include="Resources\playlist-image.jpg" />
+    <Resource Include="Resources\plus-icon.jpg" />
+    <Resource Include="Resources\star-icon.png" />
+    <Resource Include="Resources\UserIcon.png" />
   </ItemGroup>
 
 </Project>

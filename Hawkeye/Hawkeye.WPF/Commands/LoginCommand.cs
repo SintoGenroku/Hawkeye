@@ -40,15 +40,15 @@ namespace Hawkeye.WPF.Commands
             }
             catch (UserNotFoundException)
             {
-                _loginViewModel.ErrorMessage = "Username does not exist.";
+                _loginViewModel.ErrorMessage = "Пользователя с таким именем не существует.";
             }
             catch (InvalidPasswordException)
             {
-                _loginViewModel.ErrorMessage = "Incorrect password.";
+                _loginViewModel.ErrorMessage = "Некорректный пароль.";
             }
             catch (Exception)
             {
-                _loginViewModel.ErrorMessage = "Login failed.";
+                _loginViewModel.ErrorMessage = "Ошибка входа.";
             }
         }
 

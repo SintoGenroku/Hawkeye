@@ -22,14 +22,20 @@ namespace Hawkeye.WPF.HostBuilders
                services.AddTransient<MainViewModel>();
                services.AddTransient<HomeViewModel>();
                services.AddTransient<CurrentFilmViewModel>();
+               services.AddTransient<CurrentPlaylistViewModel>();
+               services.AddTransient<ProfileViewModel>();
+               services.AddTransient<AdminPanelViewModel>();
 
-               services.AddSingleton<CreateViewModel<HomeViewModel>>(services => () => services.GetRequiredService<HomeViewModel>());
+               services.AddSingleton<CreateViewModel<HomeViewModel>>(services => () => CreateHomeViewModel(services));
                services.AddSingleton <CreateViewModel<FilmsViewModel>>(services => () => CreateFilmsViewModel(services));
                services.AddSingleton<CreateViewModel<PlaylistsViewModel>>(services => () => services.GetRequiredService<PlaylistsViewModel>());
-               services.AddSingleton<CreateViewModel<FavoriteViewModel>>(services => () => services.GetRequiredService<FavoriteViewModel>());
+               services.AddSingleton<CreateViewModel<FavoriteViewModel>>(services => () => CreateFavoriteViewModel(services));
                services.AddSingleton<CreateViewModel<LoginViewModel>>(services => () => CreateLoginViewModel(services));
                services.AddSingleton<CreateViewModel<RegistrationViewModel>>(services => () => CreateRegisterViewModel(services));
                services.AddSingleton<CreateViewModel<CurrentFilmViewModel>>(services => () => services.GetRequiredService<CurrentFilmViewModel>());
+               services.AddSingleton<CreateViewModel<CurrentPlaylistViewModel>>(services => () => CreateCurrentPlaylistViewModel(services));
+               services.AddSingleton<CreateViewModel<ProfileViewModel>>(services => () => CreateProfileViewModel(services));
+               services.AddSingleton<CreateViewModel<AdminPanelViewModel>>(services => () => CreateAdminPanelViewModel(services));
 
                services.AddSingleton<IViewModelFactory, ViewModelFactory>();
 
@@ -43,12 +49,15 @@ namespace Hawkeye.WPF.HostBuilders
             return host;
         }
 
-/*        private static HomeViewModel CreateHomeViewModel(IServiceProvider services)
+        private static HomeViewModel CreateHomeViewModel(IServiceProvider services)
         {
             return new HomeViewModel(
-                services.GetRequiredService<AssetSummaryViewModel>(),
-                MajorIndexListingViewModel.LoadMajorIndexViewModel(services.GetRequiredService<IMajorIndexService>()));
-        }*/
+                services.GetRequiredService<IAuthenticator>(),
+                services.GetRequiredService<IFilmRepository>(),
+                services.GetRequiredService<INavigator>(),
+                services.GetRequiredService<IViewModelFactory>()
+               );
+        }
 
         private static LoginViewModel CreateLoginViewModel(IServiceProvider services)
         {
@@ -68,9 +77,45 @@ namespace Hawkeye.WPF.HostBuilders
         private static FilmsViewModel CreateFilmsViewModel(IServiceProvider services)
         {
             return new FilmsViewModel(
+                services.GetRequiredService<IAuthenticator>(),
                 services.GetRequiredService<IFilmRepository>(),
+                services.GetRequiredService<IUserRepository>(),
                 services.GetRequiredService<INavigator>(),
                 services.GetRequiredService<IViewModelFactory>());
+        }
+
+        private static FavoriteViewModel CreateFavoriteViewModel(IServiceProvider services)
+        {
+            return new FavoriteViewModel(
+                services.GetRequiredService<IAuthenticator>(),
+                services.GetRequiredService<IFilmRepository>(),
+                services.GetRequiredService<IUserRepository>(),
+                services.GetRequiredService<INavigator>(),
+                services.GetRequiredService<IViewModelFactory>());
+        }
+
+        private static CurrentPlaylistViewModel CreateCurrentPlaylistViewModel(IServiceProvider services)
+        {
+            return new CurrentPlaylistViewModel(
+                services.GetRequiredService<IPlaylistRepository>(),
+                services.GetRequiredService<IFilmRepository>(),
+                services.GetRequiredService<IAuthenticator>(),
+                services.GetRequiredService<INavigator>(),
+                services.GetRequiredService<IViewModelFactory>()
+                );
+        }
+        private static ProfileViewModel CreateProfileViewModel(IServiceProvider services)
+        {
+            return new ProfileViewModel(
+                services.GetRequiredService<IAuthenticator>(),
+                services.GetRequiredService<INavigator>(),
+                services.GetRequiredService<IViewModelFactory>()
+                );
+        }
+
+        private static AdminPanelViewModel CreateAdminPanelViewModel(IServiceProvider services)
+        {
+            return new AdminPanelViewModel(services.GetRequiredService<ICommentRepository>());
         }
     }
 }

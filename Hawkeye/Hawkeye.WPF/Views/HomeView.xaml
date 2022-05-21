@@ -4,24 +4,75 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Hawkeye.WPF.Views"
+             xmlns:nav="clr-namespace:Hawkeye.WPF.State.Navigators"         
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800" Background="White">
+             d:DesignHeight="450" d:DesignWidth="800" >
+
+    <UserControl.Resources>
+
+        <Style TargetType="Button" x:Key="AdminButton">
+            <Setter Property="Width" Value="230"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Background" Value="DarkBlue"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding isAdmin}" Value="False">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
+            
             <Grid.Background>
-                <ImageBrush Opacity="0.8" ImageSource="\Resuorces\HomeViewScreen.jpg" Stretch="UniformToFill"/>
+                <ImageBrush Opacity="0.9" ImageSource="\Resources\cult-cinema.jpeg" Stretch="UniformToFill"/>
             </Grid.Background>
+            
+            
             <StackPanel Orientation="Vertical" Style="{StaticResource HomePageTitle}">
                 <TextBlock Style="{StaticResource AppTitle}" Text="Hawkeye"/>
                 <TextBlock Style="{StaticResource AppSubTitle}" Text="Обитель кинематографа"/>
             </StackPanel>
         </Grid>
-        
-        
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock FontSize="25" Text="Добро пожаловать, "/>
+                <TextBlock FontSize="25" Text="{Binding LoggedUser.Name}"/>
+                <TextBlock FontSize="25" Text="!"/>
+            </StackPanel>
+            <Button 
+                     Content="Редактор комментариев"
+                     Padding="10"
+                     Style="{StaticResource AdminButton}"
+                     Command="{Binding UpdateCurrentViewModelCommand}"
+                     CommandParameter="{x:Static nav:ViewType.AdminPanel}" />
+        </Grid>
+
+        <ListBox Grid.Row="3"
+                 BorderThickness="0"
+                 ItemsSource="{Binding RandomFilmsForUser}"
+                 SelectedItem="{Binding SelectedFilm}"
+                 ItemTemplate="{StaticResource ResourceKey=RandomFilmsCollection}"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
 
     </Grid>
 </UserControl>

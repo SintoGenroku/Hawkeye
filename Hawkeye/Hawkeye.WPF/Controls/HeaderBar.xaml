@@ -6,7 +6,7 @@
              xmlns:nav="clr-namespace:Hawkeye.WPF.State.Navigators"
              xmlns:local="clr-namespace:Hawkeye.WPF.Controls"
              mc:Ignorable="d" 
-             d:DesignHeight="50" d:DesignWidth="1000" Background="{StaticResource BrushHeader}">
+             d:DesignHeight="60" d:DesignWidth="1000" Background="{StaticResource BrushHeader}">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
@@ -15,23 +15,25 @@
         </Grid.ColumnDefinitions>
         <Image Grid.Column="0" 
                Margin="30,5,0,5" 
-               Source="/Resuorces/DarkThemeLogo.png"
+               Source="/Resources/DarkThemeLogo.png"
                HorizontalAlignment="Left"/>
         <TextBlock Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Foreground="White">
             Hawkeye
         </TextBlock>
         <Button Grid.Column="2"
                 Margin="0,0,30,0" 
-                HorizontalAlignment="Right">
+                HorizontalAlignment="Right"
+                Command="{Binding UpdateCurrentViewModelCommand}"
+                CommandParameter="{x:Static nav:ViewType.Profile}">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
-                        <Ellipse Height="45" Width="45" Fill="#ffffff"></Ellipse>
+                        <Ellipse Height="35" Width="35" Fill="#ffffff"></Ellipse>
                         <Label HorizontalAlignment="Center"
                                VerticalAlignment="Center">
                             <Label.Content>
-                                <Image Source="/Resuorces/UserIcon.png"
-                                       Width="35" Height="35"/>
+                                <Image Source="/Resources/UserIcon.png"
+                                       Width="30" Height="30"/>
                             </Label.Content>
                         </Label>
                     </Grid>

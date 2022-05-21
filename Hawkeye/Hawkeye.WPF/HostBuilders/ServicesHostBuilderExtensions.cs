@@ -28,6 +28,7 @@ namespace Hawkeye.WPF.HostBuilders
                 services.AddScoped<IUserRepository, UserRepository>();
                 services.AddScoped<IPlaylistRepository, PlaylistRepository>();
                 services.AddScoped<IFilmRepository, FilmRepository>();
+                services.AddScoped<ICommentRepository, CommentRepository>();
                 services.AddScoped<IRoleRepository, RoleRepository>();
                 services.AddSingleton<IPasswordHasher, PasswordHasher>();
                 services.AddSingleton<INavigator, Navigator>();

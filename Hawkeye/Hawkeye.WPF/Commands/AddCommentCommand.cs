@@ -39,12 +39,14 @@ namespace Hawkeye.WPF.Commands
             {
                 if (_currentFilmViewModel.CommentText != null)
                 {
-                    commentRepository.CreateAsync(new Comment()
+                    var comment = new Comment()
                     {
                         Film = FilmStorage.Film,
                         User = _currentUser,
                         CommentText = _currentFilmViewModel.CommentText,
-                    });
+                    };
+                    commentRepository.CreateAsync(comment);
+                    _currentFilmViewModel.FilmComments.Add(comment);
                     _currentFilmViewModel.CommentText = "";
                 }
                 else

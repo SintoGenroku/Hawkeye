@@ -1,4 +1,6 @@
 ﻿using Hawkeye.Domain.Models;
+using Hawkeye.EntityFramework.Services;
+using Microsoft.AspNet.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hawkeye.EntityFramework
@@ -13,7 +15,9 @@ namespace Hawkeye.EntityFramework
         public DbSet<Comment> Comments { get; set; }
 
 
-        //public HawkeyeDbContext(DbContextOptions<HawkeyeDbContext> options) : base(options) { }
+        public HawkeyeDbContext(DbContextOptions<HawkeyeDbContext> options) : base(options) 
+        {
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -30,7 +34,9 @@ namespace Hawkeye.EntityFramework
 
             modelBuilder.Entity<Role>()
                 .HasMany(r => r.Users)
-                .WithOne(u => u.Role);
+                .WithOne(u => u.Role)
+                .HasForeignKey(u => u.RoleId);
+
 
             modelBuilder.Entity<Playlist>()
                 .HasMany(p => p.Films)
@@ -43,11 +49,17 @@ namespace Hawkeye.EntityFramework
             modelBuilder.Entity<User>()
                 .HasMany(u => u.FavoriteFilms)
                 .WithMany(f => f.LikedUsers);
+
             modelBuilder.Entity<Comment>()
                 .HasOne(c => c.User)
                 .WithMany(u => u.Comments);
 
-            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<User>().Property(u => u.RegistrationDate).HasDefaultValueSql("getdate()");
+
+
+            
+
         }
     }
 }

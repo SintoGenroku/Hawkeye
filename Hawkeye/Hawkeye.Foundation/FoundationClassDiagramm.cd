@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Hawkeye.Foundation.Services.AccountService">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAQAAAQAAA=</HashCode>
+      <FileName>Services\AccountService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Hawkeye.Foundation.Services.Abstracts.IAccountService">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAQAAAAAAA=</HashCode>
+      <FileName>Services\Abstracts\IAccountService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Hawkeye.Foundation.Services.RegistrationResult">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAACAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\RegistrationResult.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

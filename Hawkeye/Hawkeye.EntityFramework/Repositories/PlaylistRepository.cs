@@ -19,7 +19,7 @@ namespace Hawkeye.EntityFramework.Repositories
 
         public IQueryable<Playlist> GetByIdWithOwnerAsync(Guid id)
         {
-            return Data.Where(playlist => playlist.User.Id == id);
+            return Data.Where(playlist => playlist.User.Id == id).Include(playlist => playlist.Films);
 
         }
     }

@@ -31,7 +31,7 @@
                 BorderBrush="{StaticResource BrushNavigation}"
                 BorderThickness="0,0,0,3">
                 <Border.Effect>
-                    <DropShadowEffect BlurRadius="20" Color="Gray" />
+                    <DropShadowEffect BlurRadius="20" Color="#3169ad" />
                 </Border.Effect>
                 <TextBlock Text="{Binding Film.Name}" FontSize="30" HorizontalAlignment="Center"/>
             </Border>
@@ -49,7 +49,7 @@
                     <RowDefinition Height="300"/>
                 </Grid.RowDefinitions>
                 <Image Grid.Column="1" Grid.Row="1" Source="{Binding Film.PosterURI}" HorizontalAlignment="Left"/>
-                <Grid Grid.Row="1" Grid.Column="2" Margin="10" Background="LightGray">
+                <Grid Grid.Row="1" Grid.Column="2" Margin="10" Background="#aacbf2">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"/>
                         <RowDefinition Height="2*"/>
@@ -82,17 +82,30 @@
                 </Grid>
                 <TextBlock Grid.Row="2" Grid.Column="1">
                 <Hyperlink NavigateUri="{Binding Film.Trailer}" FontSize="15">
-                    Трейлер
+                      <Span><Run>Трейлер</Run></Span>
                 </Hyperlink>
                 </TextBlock>
-                <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding Film.Description}" TextWrapping="Wrap" Padding="15" FontSize="20"/>
+
+                <MediaElement Name="VideoControl" Width="400" Height ="200" Grid.Row="2" Grid.Column="1"
+                  
+                  Source="{Binding Film.Trailer}" >
+
+                    </MediaElement>
+                    <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding Film.Description}" TextWrapping="Wrap" Padding="15" FontSize="20"/>
                 <StackPanel Grid.Row="1" Grid.Column="3" Orientation="Vertical">
                     <TextBlock Text="Рейтинг" FontSize="20" HorizontalAlignment="Center"/>
                     <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Center">
-                        <Image Source="/Resuorces/star-icon.png" Width="30" Height="30"/>
+                        <Image Source="/Resources/star-icon.png" Width="30" Height="30"/>
                         <TextBlock Text="{Binding Film.Rate}" FontSize="18"/>
                         <TextBlock Text="/10" FontSize="18"/>
                     </StackPanel>
+                    <Button Grid.Row="2" Width="60" HorizontalAlignment="Right" Background="#0a3161"
+                            Command="{Binding AddFilmToFavoriteCommand}"
+                            CommandParameter="{Binding Film.Id}">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/Resources/heart-icon.png" Stretch="UniformToFill" Margin="3"/>
+                        </StackPanel>
+                    </Button>
                 </StackPanel>
 
             </Grid>

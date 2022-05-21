@@ -10,7 +10,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
-            <RowDefinition/>
+            <RowDefinition Height="800"/>
         </Grid.RowDefinitions>
         <Border Grid.Row="0"  
                 BorderBrush="{StaticResource BrushNavigation}"
@@ -20,20 +20,23 @@
             </Border.Effect>
             <TextBlock Text="Фильмы" FontSize="30" HorizontalAlignment="Center"/>
         </Border>
-
-        <ListBox Grid.Row="1"
+        <Grid Grid.Row="1">
+            <ListBox 
                  BorderThickness="0"
                  ItemsSource="{Binding Films}"
                  SelectedItem="{Binding SelectedFilm}"
                  ItemTemplate="{StaticResource ResourceKey=FilmsListTemplate}"
-                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
-            
-            <ListBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <WrapPanel HorizontalAlignment="Center"/>
-                </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
-        </ListBox>
-    </Grid>
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 >
+
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel HorizontalAlignment="Center"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+        </Grid>
+           
+     </Grid>
     
 </UserControl>

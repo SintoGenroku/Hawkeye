@@ -735,8 +735,10 @@
       "Hawkeye.EntityFramework/1.0.0": {
         "dependencies": {
           "Hawkeye.Domain": "1.0.0",
+          "Microsoft.AspNet.Identity.Core": "2.2.3",
           "Microsoft.EntityFrameworkCore": "6.0.4",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4",
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "Hawkeye.EntityFramework.dll": {}

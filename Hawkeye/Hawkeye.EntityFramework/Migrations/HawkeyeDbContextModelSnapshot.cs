@@ -173,6 +173,11 @@ namespace Hawkeye.EntityFramework.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("RegistrationDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("getdate()");
+
                     b.Property<Guid>("RoleId")
                         .HasColumnType("uniqueidentifier");
 

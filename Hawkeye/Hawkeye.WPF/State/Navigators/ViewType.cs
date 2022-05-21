@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Hawkeye.WPF.State.Navigators
+﻿namespace Hawkeye.WPF.State.Navigators
 {
     public enum ViewType
     {
@@ -12,9 +6,11 @@ namespace Hawkeye.WPF.State.Navigators
         Films,
         CurrentFilm,
         Playlists,
+        CurrentPlaylist,
         Profile,
         Favorite,
         Login,
         Registration,
+        AdminPanel
     }
 }

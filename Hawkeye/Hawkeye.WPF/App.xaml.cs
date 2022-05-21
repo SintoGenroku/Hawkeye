@@ -1,11 +1,10 @@
 ﻿using Hawkeye.EntityFramework;
-using Hawkeye.OmdbAPI;
-using Hawkeye.OmdbAPI.Services;
+using Hawkeye.EntityFramework.Repositories.Abstracts;
+using Hawkeye.EntityFramework.Services;
 using Hawkeye.WPF.HostBuilders;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 using System.Windows;
 
 namespace Hawkeye.WPF
@@ -40,20 +39,12 @@ namespace Hawkeye.WPF
             using (HawkeyeDbContext context = contextFactory.CreateDbContext())
             {
                 context.Database.Migrate();
+                DataChecker.DataInit(
+                    _host.Services.GetRequiredService<IUserRepository>(),
+                    _host.Services.GetRequiredService<IRoleRepository>(),
+                    _host.Services.GetRequiredService<IFilmRepository>());
             }
-            #region MyRegion
-            /*var q = new FilmService().GetFilmData(435).Result;
-    MessageBox.Show($"{q.NameRu}");*/
 
-            /*            userRepository.CreateAsync(new User()
-                        {
-                            Name = "sinto",
-                            PasswordHash = "qwerty123",
-                            Role = roleRepository.GetByNameAsync("USER").Result
-                        });*/
-            //accountService.RegisterAsync("unek", "qwerty", "qwerty");
-
-            #endregion
             Window window = _host.Services.GetRequiredService<MainWindow>();
             window.Show();
             base.OnStartup(e);

@@ -13,6 +13,7 @@ namespace Hawkeye.WPF.ViewModels
         private readonly IAuthenticator _authenticator;
 
         public bool IsLoggedIn => _authenticator.isLoggedIn;
+        public string? UserRole => _authenticator.CurrentUser.Role.Name;
         public ViewModelBase CurrentViewModel => _navigator.CurrentViewModel;
 
         public ICommand UpdateCurrentViewModelCommand { get; }

@@ -48,6 +48,14 @@
                 <views:CurrentFilmView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewmodels:CurrentPlaylistViewModel}">
+                <views:CurrentPlaylistView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:AdminPanelViewModel}">
+                <views:AdminPanelView/>
+            </DataTemplate>
+            
         </ResourceDictionary>
         
     </Application.Resources>
