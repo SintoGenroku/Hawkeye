@@ -53,7 +53,7 @@ namespace Hawkeye.WPF.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Hawkeye.WPF;component/views/filmsview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Hawkeye.WPF;V1.0.0.0;component/views/filmsview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\FilmsView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
